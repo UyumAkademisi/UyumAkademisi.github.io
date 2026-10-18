@@ -54,7 +54,8 @@ const assert = require("node:assert/strict");
         await page.locator(".schema-infographic img").scrollIntoViewIfNeeded();
         await page.waitForFunction((id) => {
           const img = document.querySelector(".schema-infographic img");
-          return img?.src.endsWith(`${id}-detayli-sema.jpg`) && img.complete && img.naturalWidth > 0;
+          const filename = id === "fintek-riskleri" ? "fintek-riskleri-detayli-sema-v2.jpg" : `${id}-detayli-sema.jpg`;
+          return img?.src.endsWith(filename) && img.complete && img.naturalWidth > 0;
         }, topic);
         assert.ok(await page.locator(".schema-infographic a").getAttribute("href"));
       }

@@ -174,11 +174,13 @@ function shuffleQuestionOptions(question: Question): Question {
 }
 
 function pickExamQuestions(mode: ExamMode) {
-  const pool = mode === "mixed" ? questions : getQuestionsForModule(mode);
-  const shuffled = shuffle(pool);
-  const selected = shuffled.slice(0, examRules.questionCount);
-  const picked = selected.length >= examRules.questionCount ? selected : shuffled;
-  return picked.map(shuffleQuestionOptions);
+  if (mode === "mixed") return shuffle(questions).slice(0, examRules.questionCount).map(shuffleQuestionOptions);
+  const selected = lessons.filter((lesson) => lesson.moduleId === mode).flatMap((lesson) => {
+    const pool = getQuestionsForModule(mode).filter((question) => question.topicId === lesson.id);
+    if (pool.length < lesson.officialQuestionCount) throw new Error(`${lesson.title}: deneme için yeterli soru yok`);
+    return shuffle(pool).slice(0, lesson.officialQuestionCount);
+  });
+  return shuffle(selected).map(shuffleQuestionOptions);
 }
 
 function scoreExam(session: ExamSession): ExamResult {
@@ -502,13 +504,13 @@ export default function MasakPrepApp() {
       return (
         <section className="exam-grid">
           {[
-            ["Modül 1 Deneme", "50 soru, 45 dakika. SPL dağılımına uygun resmi simülasyon.", "mod1"],
+            ["Modül 1 Deneme", "50 soru, 45 dakika. SPL konu dağılımına uygun özgün çalışma denemesi.", "mod1"],
             ["Modül 2 Deneme", "50 soru, 45 dakika. Uyum yönetimi ve yükümlülükler ağırlıklı.", "mod2"],
             ["Karışık Çalışma", "İki modülden hızlı tekrar; resmi simülasyon olarak işaretlenmez.", "mixed"],
           ].map(([title, text, id]) => (
             <article className="panel panel-inner exam-card" key={title}>
               <div>
-                <p className="eyebrow">{id === "mixed" ? "Çalışma modu" : "Resmi simülasyon"}</p>
+                <p className="eyebrow">{id === "mixed" ? "Çalışma modu" : "SPL formatında çalışma"}</p>
                 <h2 className="section-title">{title}</h2>
                 <p>{text}</p>
               </div>
@@ -526,9 +528,9 @@ export default function MasakPrepApp() {
       const averagePass =
         averageScore === null
           ? "İki modül çözülünce ortalama hesaplanır."
-          : averageScore >= examRules.averagePass
-            ? `Ortalama ${averageScore}: başarılı.`
-            : `Ortalama ${averageScore}: tekrar gerekli.`;
+          : averageScore >= examRules.averagePass && mod1Last!.score >= examRules.passPerModule && mod2Last!.score >= examRules.passPerModule
+            ? `Ortalama ${averageScore}: iki modül barajı ve ortalama koşulu sağlandı.`
+            : `Ortalama ${averageScore}: her iki modülde 50 barajı ve 65 ortalama birlikte sağlanmalıdır.`;
 
       return (
         <section className="progress-grid">
@@ -541,9 +543,9 @@ export default function MasakPrepApp() {
               <div className="metric"><p className="metric-value">{lastResult.blank}</p><p className="metric-label">Boş</p></div>
             </div>
             <div className={`callout ${modulePass ? "" : "warning"}`}>
-              <p className="callout-title">Resmi başarı kriteri simülasyonu</p>
+              <p className="callout-title">{lastResult.mode === "mixed" ? "Karışık çalışma sonucu" : "SPL başarı kriteri karşılaştırması"}</p>
               <p>
-                Modül puanı {lastResult.score}. Modül eşiği {examRules.passPerModule}; iki modül ortalaması eşiği {examRules.averagePass}. {averagePass}
+                {lastResult.mode === "mixed" ? "Bu çalışma seti resmî modül sınavı yerine geçmez." : `Modül puanı ${lastResult.score}. Modül eşiği ${examRules.passPerModule}; iki modül ortalaması eşiği ${examRules.averagePass}. ${averagePass}`}
               </p>
             </div>
             <div className="bar-list">
@@ -900,7 +902,7 @@ export default function MasakPrepApp() {
                 <p>Tarayıcınızın site verilerini temizleyerek yerel kayıtları silebilirsiniz; bu işlem çalışma ilerlemenizi de kaldırır. Kayıtlar cihazlar arasında eşitlenmez. Bu bilgilendirme açık rıza talebi değildir.</p>
               </details>
               <h2 className="section-title">Kaynak ve Güncellik Kontrolü</h2>
-              <p className="section-subtitle">Kayıtlı son mevzuat kontrolü: {progress.lastLegislationCheck}. Bu tarih otomatik doğrulama anlamına gelmez.</p>
+              <p className="section-subtitle">İçerik kontrolü: {examRules.legislationCheckedAt}. Temmuz rehberinden sonraki doğrulanan değişiklikler derslerde ayrıca belirtilmiştir; bu tarih sürekli veya otomatik mevzuat takibi anlamına gelmez.</p>
               {lessons.map((lesson) => <details className="academic-sources" key={lesson.id}>
                 <summary>{lesson.title}</summary>
                 <p>{lessonContentById[lesson.id].sourceTrace}</p>

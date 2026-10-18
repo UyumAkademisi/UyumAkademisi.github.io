@@ -125,7 +125,7 @@ export const examRules = {
   durationMinutes: 45,
   passPerModule: 50,
   averagePass: 65,
-  legislationCheckedAt: "18 Temmuz 2026",
+  legislationCheckedAt: "15 Ekim 2026",
 };
 
 export const modules: PrepModule[] = [
@@ -447,7 +447,7 @@ export const lessons: Lesson[] = [
 export const sourceLinks: SourceLink[] = [
   {
     title: "SPL Uyum Görevlisi Yetkilendirme Sınavı Kılavuzu",
-    url: "https://spl.com.tr/wp-content/uploads/2025/12/MASAK-Uyum-Gorevlisi-Yetkilendirme-Sinavi-Kilavuzu.pdf",
+    url: "https://spl.com.tr/wp-content/uploads/2026/03/MASAK-Uyum-Gorevlisi-Yetkilendirme-Sinavi-Kilavuzu.pdf",
     note: "E-sınav, 50 soru, 45 dakika ve resmi konu dağılımı",
     kind: "Resmi",
   },
@@ -494,10 +494,22 @@ export const sourceLinks: SourceLink[] = [
     kind: "Yardımcı",
   },
   {
-    title: "MASAK_Rehber_12-01-2026.pdf",
-    url: "#",
-    note: "Yerel 317 sayfalık çalışma notu; içerik özetlenerek kullanılır",
-    kind: "Yerel",
+    title: "MASAK Çalışma Notları - Temmuz 2026",
+    url: "https://spl.com.tr/wp-content/uploads/2026/07/Masak_Rehber.pdf",
+    note: "348 sayfalık çalışma kaynağı; sonraki mevzuat değişiklikleri ayrıca belirtilir",
+    kind: "Resmi",
+  },
+  {
+    title: "Tedbirler Yönetmeliği değişikliği - 7 Ekim 2026",
+    url: "https://www.resmigazete.gov.tr/eskiler/2026/10/20261007-9.pdf",
+    note: "11845 sayılı Karar: 370.000 / 30.000 TL eşikleri, sonraki işlemlerde imza ve denetim raporu",
+    kind: "Resmi",
+  },
+  {
+    title: "TCMB FAST işlem limitleri - 26 Ağustos 2026",
+    url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-36",
+    note: "300.000 TL işlem limiti; günlük müşteri limiti ile karıştırılmaz",
+    kind: "Resmi",
   },
   {
     title: "kitap-modül1ve2.docx",
@@ -554,10 +566,10 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     mustKnow: [
       "Türkiye İdari Tip MİB modelini benimser; MASAK finansal kuruluşlar ile kolluk/adli makamlar arasında tampon görevi görür.",
       "FATF 1989'da G-7 zirvesinde (Paris) kuruldu; Türkiye 1991'de üye oldu; 2025 itibarıyla 38 ülke ve 2 bölgesel organizasyon (AK, Körfez İşbirliği Konseyi) üyedir.",
-      "Türkiye Ekim 2021'de FATF gri listesine (artırılmış izleme) girdi; 3-6 Mayıs 2024'te ICRG'nin Avrupa-Asya Ortak Grubu ülke ziyareti yaptı, Haziran 2024 Genel Kurulu'nda kabul edilen raporla gri listeden çıktı ve FATF'in 4. tur karşılıklı değerlendirme süreci tamamlandı; Türkiye hiçbir zaman kara listeye girmedi.",
+      "Türkiye Ekim 2021'de FATF gri listesine (artırılmış izleme) girdi; 3-6 Mayıs 2024'te ICRG'nin Avrupa-Asya Ortak Grubu ülke ziyareti yaptı, Haziran 2024 Genel Kurulu'nda kabul edilen raporla gri listeden çıktı ve FATF'in artırılmış izleme süreci sona erdi; karşılıklı değerlendirme ayrı bir süreçtir; Türkiye hiçbir zaman kara listeye girmedi.",
       "2025 Haziran itibarıyla FATF kara listesinde yalnızca 3 ülke vardır: İran, Kuzey Kore ve Myanmar.",
       "MONEYVAL, Avrupa Konseyi bünyesinde bir izleme organıdır (AB kurumu değildir); Türkiye FATF üyesi olduğu için doğrudan MONEYVAL değil FATF tarafından değerlendirilir.",
-      "Egmont Grubu 1995'te Brüksel'de kuruldu, Türkiye 1998'de üye oldu; MASAK, Egmont Güvenli Ağı'na (ESW) 2001'de dahil olmuştur ve 182 ülkenin MİB'i bu ağ üzerinden gizli istihbarat paylaşır.",
+      "Egmont Grubu 1995'te Brüksel'de kuruldu, Türkiye 1998'de üye oldu; MASAK, Egmont Güvenli Ağı'na (ESW) 2001'de dahil olmuştur ve Şubat 2026 Egmont açıklamasına göre 182 üye MİB'i bu ağ üzerinden gizli istihbarat paylaşır.",
     ],
     confusions: [
       "Gri liste bir iyileştirme/izleme sürecidir, kara liste ise finansal sistemden dışlanmaya varan ağır yaptırımı temsil eder; ikisi karıştırılmamalıdır.",
@@ -570,7 +582,7 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     legalAnchors: ["FATF 40 Tavsiye (özellikle Tavsiye 29)", "Egmont Grubu ilkeleri", "MONEYVAL tüzüğü", "mufettis.org Modül 1 §2-4"],
     reviewCards: [
       { term: "İdari MİB (MASAK)", detail: "Bakanlığa bağlı, yükümlü ile kolluk arasında tampon görevi görür." },
-      { term: "Türkiye FATF süreci", detail: "1991 üye, Ekim 2021 gri liste, 28 Haziran 2024 çıkış (4. tur tamamlandı), hiç kara listeye girmedi." },
+      { term: "Türkiye FATF süreci", detail: "1991 üye, Ekim 2021 gri liste, 28 Haziran 2024 artırılmış izlemeden çıkış, hiç kara listeye girmedi." },
       { term: "FATF üyeliği", detail: "2025 itibarıyla 38 ülke + 2 bölgesel organizasyon (AK, Körfez İşbirliği Konseyi); kara listede sadece İran, Kuzey Kore, Myanmar var." },
       { term: "MONEYVAL", detail: "Avrupa Konseyi organıdır; Türkiye FATF üzerinden değerlendirilir." },
       { term: "Egmont Grubu", detail: "1995 kuruldu, Türkiye 1998'de üye oldu; MASAK Egmont Güvenli Ağı'na (ESW) 2001'de dahil oldu." },
@@ -582,12 +594,12 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     pdfRange: "MASAK_Rehber s. 42-58",
     coreNarrative:
       "FATF'in 1 numaralı Tavsiyesi'ndeki Risk Temelli Yaklaşım gereği Türkiye, AK/TF Ulusal Risk Değerlendirmesi (URD) ile Kitle İmha Silahlarının Yayılmasının Finansmanı (KİSYF) URD'sini ayrı ayrı hazırlar. Bu raporlar suç türlerini, terör örgütlerini ve sektörleri risk seviyesine göre derecelendirir; MASAK her iki stratejik sürecin de sekretarya ve koordinasyon görevini yürütür.",
-    examFocus: "Aklama/TF risk derecelendirmesi, sektörel kırılganlık tablosu ve 2021-2025 / 2025-2029 strateji belgelerinin kapsamı.",
+    examFocus: "Aklama/TF risk derecelendirmesi, sektörel kırılganlık tablosu ve 2026-2030 / 2025-2029 strateji belgelerinin kapsamı.",
     mustKnow: [
       "Aklama suçlarında öncül suç risk sıralaması: Yüksek risk dolandırıcılık; orta-yüksek risk yasa dışı bahis/kumar, uyuşturucu ticareti, hırsızlık/yağma; orta risk vergi kaçakçılığı, yolsuzluk, sahtecilik, gümrük/göçmen kaçakçılığı; düşük risk tefecilik.",
       "Terörün finansmanında en yüksek riskli yapı FETÖ, ardından PKK/KCK ve dini istismar eden örgütler gelir; sol terör örgütleri orta-düşük risk grubundadır.",
       "Sektörel kırılganlıkta Bankalar ve Kripto Varlık Hizmet Sağlayıcıları yüksek riskli; ödeme kuruluşları, döviz büroları, kuyumcular ve emlakçılar orta-yüksek riskli; avukatlık, sigortacılık ve kargo orta-düşük risklidir.",
-      "2021-2025 Strateji Belgesi adli süreçlerin etkinleştirilmesi ve müsadere mekanizmalarının güçlendirilmesi gibi 5 ana amaç belirler; 2025-2029 Strateji Belgesi ise KİSYF ile mücadeleye odaklanır.",
+      "2026-2030 Strateji Belgesi adli süreçlerin etkinleştirilmesi ve müsadere mekanizmalarının güçlendirilmesi gibi 5 ana amaç belirler; 2025-2029 Strateji Belgesi ise KİSYF ile mücadeleye odaklanır.",
     ],
     confusions: [
       "Ulusal risk değerlendirmesi (ülke/sektör düzeyi) yükümlünün kendi müşteri/işlem risk sınıflandırmasının yerine geçmez, sadece referans çerçeve sunar.",
@@ -596,12 +608,12 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     ],
     casePattern:
       "Ulusal Risk Değerlendirmesi'nde bir sektör (ör. kripto varlık hizmet sağlayıcıları) yüksek kırılganlıkta gösterilirse, o sektörde ŞİB rehberleri, eğitim yükümlülüğü ve izleme sıklığı MASAK tarafından daha yoğun tutulur.",
-    legalAnchors: ["AK/TF Ulusal Risk Değerlendirmesi", "2021-2025 AML/CFT Strateji Belgesi", "2025-2029 KİSYF Strateji Belgesi", "mufettis.org Modül 1 §7"],
+    legalAnchors: ["AK/TF Ulusal Risk Değerlendirmesi", "2026-2030 AML/CFT Strateji Belgesi", "2025-2029 KİSYF Strateji Belgesi", "mufettis.org Modül 1 §7"],
     reviewCards: [
       { term: "En yüksek aklama riski", detail: "Dolandırıcılık; en düşük risk tefecilik." },
       { term: "En yüksek TF riski", detail: "FETÖ, ardından PKK/KCK ve dini istismar eden örgütler." },
       { term: "Yüksek riskli sektör", detail: "Bankalar ve kripto varlık hizmet sağlayıcıları." },
-      { term: "Strateji belgeleri", detail: "2021-2025 (AK/TF, 5 amaç) ve 2025-2029 (KİSYF); sekretarya MASAK'tır." },
+      { term: "Strateji belgeleri", detail: "2026-2030 (AK/TF, 5 amaç) ve 2025-2029 (KİSYF); sekretarya MASAK'tır." },
     ],
     miniQuizSeed: ["Aklama suçlarında en yüksek risk grubu hangi suçtur?", "Hangi sektörler ulusal risk değerlendirmesinde yüksek riskli kabul edilir?"],
   },
@@ -656,7 +668,7 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     confusions: [
       "TF'de fonun kaynağı tamamen yasal (maaş, miras, ticari kâr) olabilir; suçu oluşturan kaynak değil, fonun yöneldiği amaçtır.",
       "1267 kararında liste hazır BMGK listesidir, tartışılmaz; 1373'te ülkeler kendi listelerini oluşturur veya karşılıklılık ilkesiyle talep değerlendirir.",
-      "Dondurma geçici ve idari bir tedbirdir, mülkiyeti değiştirmez; el koyma/müsadere ise yargı kararıyla mülkiyetin devlete geçmesidir.",
+      "Dondurma geçici ve idari bir tedbirdir, mülkiyeti değiştirmez; el koyma geçici adli tedbirdir ve mülkiyeti devlete geçirmez; müsadere ayrı yargısal sonuçtur.",
       "Küçük tutarlı veya yasal görünümlü (dernek/bağış) fonlar otomatik düşük risk sayılmaz; TF'de tespit büyük tutarlı aklamaya göre daha zordur.",
     ],
     casePattern:
@@ -751,7 +763,7 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
       "İşlem gerçekleşmese bile kayıt tutma ve ŞİB değerlendirmesi yükümlülüğü ortadan kalkmaz.",
     ],
     casePattern:
-      "Yüksek riskli bir hesaptan hızlı çıkış talimatı verildiğinde ve fonun derhal başka hesaplara dağılacağı öngörüldüğünde yükümlü erteleme talepli ŞİB hazırlar, Bakanlık kararına kadar (en fazla 7 iş günü) işlemi gerçekleştirmez; süre dolar da karar gelmezse işlemi yapmak zorundadır.",
+      "Yüksek riskli bir hesaptan hızlı çıkış talimatı verildiğinde ve fonun derhal başka hesaplara dağılacağı öngörüldüğünde yükümlü erteleme talepli ŞİB hazırlar, Bakanlık kararına kadar (en fazla 7 iş günü) işlemi gerçekleştirmez; süre sonunda yalnız ertelemeden doğan imtina yükümlülüğü biter; KYC engeli veya dondurma kararı varsa işlem yapılamaz.",
     legalAnchors: ["5549 sayılı Kanun md. 19/A", "mufettis.org Modül 2 §10"],
     reviewCards: [
       { term: "Karar makamı", detail: "Hazine ve Maliye Bakanı; devredilirse yalnızca Bakan Yardımcısına." },
@@ -765,13 +777,13 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     priority: "medium",
     pdfRange: "MASAK_Rehber s. 134-151 ve 210-226",
     coreNarrative:
-      "Ödeme sistemlerinde EFT (mesai saatleri içinde, anlık değil), FAST (7/24 anlık, Kolay Adres ile, günlük limit 250.000 TL) ve SWIFT (bir ödeme sistemi değil, sadece mesajlaşma ağı) ayrımı sınavda sık sorulur. 6493 sayılı Kanun ile ödeme ve elektronik para kuruluşları sisteme dahil olmuştur; bu kuruluşlar faiz veremez ve kredi kullandıramaz. Kripto varlık hizmet sağlayıcıları (KVHS) 2024'ten itibaren finansal kuruluş sayılır ve SPK izni zorunludur; 15.000 TL ve üzeri transferlerde Seyahat Kuralı (Travel Rule) uygulanır.",
-    examFocus: "EFT/FAST/SWIFT farkı, 6493 ve kripto mevzuatı, Seyahat Kuralı'nın 15.000 TL eşiği ve privacy coin yasağı.",
+      "Ödeme sistemlerinde EFT (mesai saatleri içinde, anlık değil), FAST (7/24 anlık, Kolay Adres ile, 26 Ağustos 2026 itibarıyla işlem başına limit 300.000 TL) ve SWIFT (bir ödeme sistemi değil, sadece mesajlaşma ağı) ayrımı sınavda sık sorulur. 6493 sayılı Kanun ile ödeme ve elektronik para kuruluşları sisteme dahil olmuştur; bu kuruluşlar faiz veremez ve kredi kullandıramaz. Kripto varlık hizmet sağlayıcıları (KVHS) 2024'ten itibaren finansal kuruluş sayılır ve SPK izni zorunludur; 30.000 TL ve üzeri transferlerde Seyahat Kuralı (Travel Rule) uygulanır.",
+    examFocus: "EFT/FAST/SWIFT farkı, 6493 ve kripto mevzuatı, Seyahat Kuralı'nın 30.000 TL eşiği ve privacy coin yasağı.",
     mustKnow: [
-      "EFT bankalar arası TL transferini mesai saatleri içinde yapar; FAST 7/24 anlık çalışır ve Kolay Adres (telefon/TCKN) ile günlük 250.000 TL limitle işler; SWIFT bir ödeme sistemi değil, uluslararası mesajlaşma ağıdır.",
+      "EFT bankalar arası TL transferini mesai saatleri içinde yapar; FAST 7/24 anlık çalışır ve Kolay Adres (telefon/TCKN) ile işlem başına 300.000 TL limitle işler; SWIFT bir ödeme sistemi değil, uluslararası mesajlaşma ağıdır.",
       "6493 sayılı Kanun kapsamındaki ödeme ve elektronik para kuruluşları, bankalardan farklı olarak faiz veremez ve kredi kullandıramaz; temel işlevleri transfer ve ödemeye aracılıktır.",
       "2024'ten itibaren kripto varlık hizmet sağlayıcıları (KVHS) finansal kuruluş statüsündedir, SPK'dan izin almak ve uyum programı/uyum görevlisi bulundurmak zorundadır.",
-      "Seyahat Kuralı (Travel Rule): 15.000 TL ve üzerindeki kripto transferlerinde gönderen ve alıcıya ait kimlik/hesap bilgileri transfer mesajına eklenir; eksik bilgi varsa tamamlatılır, sağlanamazsa işlem iade edilir.",
+      "7 Ekim 2026'dan itibaren 30.000 TL ve üzeri kripto transfer mesajlarında gönderenin ad/unvan, cüzdan/referans ve ek tanımlayıcı bilgilerinden en az biri bulunur ve gönderen bilgileri teyit edilir. Alıcının ad/unvan ve cüzdan/referans bilgileri de bulunur; bunların teyidi bu madde kapsamında zorunlu değildir. Eşik altında da her iki tarafın ad/unvan ve cüzdan/referans bilgileri iletilir; bu mesaj bilgilerinin teyidi zorunlu değildir. Sürekli iş ilişkisi ve şüphe nedeniyle tutardan bağımsız KYC yükümlülükleri ayrıca devam eder.",
       "Bağımsız (unhosted) cüzdanlara transferde bilgi aktarımı teknik olarak mümkün olmadığından hizmet sağlayıcı müşteriden yazılı beyan alarak risk temelli değerlendirme yapar; gizlilik odaklı (privacy coin) varlıkların ticaretine izin veren platformlar UKT/işlem kabul edemez.",
       "KVHS'lerde ilk finansal hareketin müşterinin kendi adına kayıtlı bir banka hesabından gelmesi ve kayıtların 8 yıl saklanması beklenir.",
     ],
@@ -782,12 +794,12 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
       "Seyahat kuralında bilgi eksikliği tespit edildiğinde işlem doğrudan bloke edilmez; önce eksikliğin tamamlanması istenir, sağlanamazsa iade edilir.",
     ],
     casePattern:
-      "Bir KVHS, 15.000 TL üzerindeki bir transferde karşı taraf bilgilerini eksik alırsa önce göndericiden eksik bilgiyi tamamlamasını ister; bilgi tamamlanamazsa transferi iade eder ve durumu risk değerlendirmesine yansıtır.",
+      "Bir KVHS, 30.000 TL üzerindeki bir transferde karşı taraf bilgilerini eksik alırsa önce göndericiden eksik bilgiyi tamamlamasını ister; bilgi tamamlanamazsa transferi iade eder ve durumu risk değerlendirmesine yansıtır.",
     legalAnchors: ["6493 sayılı Kanun", "6362 sayılı Kanun (kripto varlık düzenlemesi)", "Tedbirler Yönetmeliği kripto transfer hükümleri", "mufettis.org Modül 1 §10"],
     reviewCards: [
-      { term: "EFT / FAST / SWIFT", detail: "EFT mesai saatinde, FAST 7/24 anlık (250.000 TL/gün), SWIFT sadece mesajlaşma ağıdır." },
+      { term: "EFT / FAST / SWIFT", detail: "EFT mesai saatinde, FAST 7/24 anlık (300.000 TL/işlem), SWIFT sadece mesajlaşma ağıdır." },
       { term: "6493 sayılı Kanun", detail: "Ödeme ve e-para kuruluşları; faiz ve kredi veremezler." },
-      { term: "Seyahat Kuralı", detail: "15.000 TL ve üzeri kripto transferinde taraf bilgisi zorunludur." },
+      { term: "Seyahat Kuralı", detail: "30.000 TL altında da taraf bilgisi vardır; üstünde gönderen için ek bilgi ve teyit aranır (md. 24/A)." },
       { term: "Privacy coin", detail: "Gizlilik odaklı varlık sunan KVHS'ler UKT/işlem yapamaz." },
     ],
     miniQuizSeed: ["Seyahat Kuralı hangi tutardan itibaren uygulanır?", "SWIFT ile EFT arasındaki temel fark nedir?"],
@@ -804,7 +816,7 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
       "MASAK'a şüpheli işlem bildiriminde bulunma yetkisi münhasıran uyum görevlisine aittir ve devredilemez; kurum politikası en az 2 yılda bir gözden geçirilir.",
       "Finansal grupta 'kontrol' için %51 hisse şartı aranmaz, yönetim kurulu çoğunluğunu atama/görevden alma gücü yeterlidir; grup içi bilgi paylaşımı serbesttir ama ŞİB yapıldığı bilgisi grup içinde dahi paylaşılamaz.",
       "Uyum Görevlisi Lisansı sınavında genel başarı notu en az 65, modüllü sınavlarda her modülden en az 50 puan şarttır; lisans MASAK sicilinde izlenir ve her 3 yılda bir yenileme eğitimi gerekir.",
-      "Son sınav veya yenileme eğitiminden itibaren 5 yıl geçerse lisans tamamen iptal olur; MASAK'ta idari düzeyde en az 4 yıl veya uzman/denetim elemanı olarak en az 12 yıl çalışanlar sınavdan muaftır (yenileme muafiyeti sadece MASAK'ta halen görevli olanlara tanınır).",
+      "Son sınav veya yenileme eğitiminden itibaren yenileme yapılmazsa askıya alınır; sınav/son eğitim bitişinden 5 yılda başvuru yapılmazsa iptal edilir; MASAK'ta idari düzeyde en az 4 yıl veya uzman/denetim elemanı olarak en az 12 yıl çalışanlar sınavdan muaftır (yenileme muafiyeti sadece MASAK'ta halen görevli olanlara tanınır).",
       "Münhasıran uyum görevlisi atanan kişinin yönetim kurulu üyeleri/genel müdürle 2. dereceye kadar kan veya kayın hısımlığı bulunamaz ve kurumda nitelikli pay (%10 ve üzeri) sahibi olamaz.",
     ],
     confusions: [
@@ -815,13 +827,13 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
       "Sınav muafiyeti (4/12 yıl deneyim) ile yenileme eğitimi muafiyeti farklı kurallardır; biri sınavı, diğeri 3 yıllık döngüyü kapsar.",
     ],
     casePattern:
-      "Bir aday modül sınavlarından 48, 72 ve 70 puan alırsa ortalaması 65'in altında kalmasa bile 48 puanla modül barajı olan 50'nin altında kaldığından sınavı geçemez; MASAK'ta 5 yıl daire başkanlığı yapıp ayrılan biri sınav muafiyetini korusa da kurumdan ayrıldığı için yenileme eğitimi muafiyetinden yararlanamaz.",
+      "İki modülden 48 ve 84 alan adayın ortalaması 66 olsa da ilk modül 50 puanın altında olduğundan aday başarılı sayılmaz. Sınav muafiyeti ile MASAK'ta çalışılan süreye bağlı yenileme eğitimi muafiyeti ayrı şartlara tabidir.",
     legalAnchors: ["5549 sayılı Kanun md. 5", "Uyum Programları Yönetmeliği", "MASAK Genel Tebliği Sıra No: 30 (Uyum Görevlisi Lisansı, RG 9 Eylül 2025/33012)", "mufettis.org Modül 2 §2-4"],
     reviewCards: [
       { term: "Altı bileşen", detail: "Kurum politikası, risk yönetimi, izleme-kontrol, uyum görevlisi/birimi, eğitim, iç denetim." },
       { term: "Nihai sorumluluk", detail: "Yönetim Kurulu'ndadır; yetki devri sorumluluğu kaldırmaz." },
       { term: "Lisans sınavı", detail: "Genel not en az 65, her modülden en az 50." },
-      { term: "Lisans döngüsü", detail: "3 yılda bir yenileme; 5 yıl aksama halinde tam iptal." },
+      { term: "Lisans döngüsü", detail: "3 yılda yenileme; süre aşımında askı. Sınav/son eğitim bitişinden itibaren 5 yılda askı kaldırma başvurusu yapılmazsa iptal." },
       { term: "Muafiyetler", detail: "MASAK'ta idari görevde 4 yıl veya uzman/denetim elemanı olarak 12 yıl çalışanlar sınavdan muaf." },
       { term: "Grup gizliliği", detail: "ŞİB bilgisi grup içinde dahi paylaşılamaz." },
     ],
@@ -835,24 +847,24 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     examFocus: "İdari/adli ceza ayrımı, 5549 sayılı Kanun md. 13-14 ceza mekanizması, finansal kuruluş çarpanı, yıllık tavan ve YKÜ/üst düzey yöneticiye ayrı ceza uygulaması.",
     mustKnow: [
       "5549 sayılı Kanun md. 13/1 uyarınca müşterinin tanınması ve devamlı bilgi verme ihlalinde 30.000 TL, ŞİB yapmama ihlalinde 50.000 TL maktu idari para cezası uygulanır; bu tutarlar 5549 sayılı Kanun md. 28 uyarınca (213 sayılı Vergi Usul Kanunu'ndaki yeniden değerleme oranı esas alınarak) her yıl başında artırılır.",
-      "Finansal kuruluşlar (banka, ödeme/e-para kuruluşu, aracı kurum, sigorta/emeklilik şirketi, yetkili müessese vb.) için ceza sabit tutarın basitçe 2 katı değildir: işlem tutarının yüzde beşinden az olmamak üzere iki kat oranında hesaplanır.",
-      "Yıllık ceza üst sınırı iki kademelidir: iki kat ceza uygulanan finansal kuruluşlar için 40.000.000 TL, diğer yükümlüler için 4.000.000 TL'dir.",
+      "Finansal kuruluşlar (banka, ödeme/e-para kuruluşu, aracı kurum, sigorta/emeklilik şirketi, yetkili müessese vb.) için ceza sabit tutarın basitçe 2 katı değildir: işlem tutarının yüzde beşinden az olmamak üzere maktu cezanın iki katı alınır ve işlem tutarının %5'i alt sınırdır.",
+      "5549 md. 13/5'teki 40.000.000 ve 4.000.000 TL, yıllık yeniden değerlemeye tabi kanuni baz tavanlardır; 2026'da uygulanacak güncel tutarlar değildir. Tavan her bir yükümlülük ve ihlal yılı bakımından uygulanır; üst tutardan ceza sonrası ertesi yıl aynı tür ihlalde had iki kat uygulanır.",
       "Adli ceza kapsamı sadece ŞİB gizliliği (md. 4/2) ile sınırlı değildir; bilgi ve belge verme yükümlülüğünün (md. 7) ve muhafaza-ibraz yükümlülüğünün (md. 8) ihlali de md. 14 uyarınca 1-3 yıl hapis ve 5.000 güne kadar adli para cezasını gerektirebilir.",
-      "Yönetim kurulu üyesi veya sorumlu üst düzey yöneticiye, yükümlüye kesilen idari para cezasının dörtte biri (1/4) oranında ayrıca ceza uygulanabilir.",
+      "5549 md. 13/2 kapsamındaki uyum yükümlülüğü ihlalinde, md. 13/3 uyarınca sorumlu yönetim kurulu üyesine, yoksa üst düzey yöneticiye, aynı ihtar ve süre şartlarıyla cezanın dörtte biri uygulanır; her ihlale otomatik olarak uygulanmaz.",
       "İkinci idari para cezasının tebliğinden itibaren 30 gün içinde eksiklikler giderilmezse yükümlünün faaliyetinin durdurulması, kısıtlanması veya faaliyet izin belgesinin iptaline yönelik tedbirler gündeme gelebilir.",
     ],
     confusions: [
       "Tüm ihlaller aynı yaptırıma tabi değildir: kimlik tespiti/ŞİB yapmama idari cezaya, ŞİB gizliliği/bilgi-belge/muhafaza-ibraz ihlalleri ise adli (hapis) sonuca tabidir.",
-      "Finansal kuruluş cezası 'sabit tutarın 2 katı' değil, 'işlem tutarının en az %5'i, iki kat oranında' hesaplanan ayrı bir mekanizmadır; iki kademeli yıllık tavan (40.000.000 TL / 4.000.000 TL) da yükümlü türüne göre değişir.",
-      "İdari para cezası sadece yükümlü tüzel kişiye kesilmez; sorumlu yönetim kurulu üyesi/üst düzey yöneticiye de yükümlüye kesilen cezanın 1/4'ü oranında ayrı ceza uygulanabilir.",
+      "İki kat çarpanı güncellenmiş maktu cezaya uygulanır; işlem tutarının %5'i alt sınırdır. Kanundaki yıllık baz tavanlar güncel yıl tutarı değildir.",
+      "Yöneticiye dörtte bir ceza md. 13/2-3 kapsamındaki uyum ihlali, ihtar ve süre koşullarıyla uygulanır; her kimlik veya ŞİB ihlaline otomatik eklenmez.",
     ],
     casePattern:
-      "Bir bankada kimlik tespiti yapılmadığı tespit edilirse idari para cezası, banka finansal kuruluş olduğu için işlem tutarının en az %5'i esas alınarak iki kat oranında hesaplanır ve sorumlu üst düzey yöneticiye de bu cezanın 1/4'ü ayrıca uygulanabilir; aynı bankada bir çalışan ŞİB yapıldığını müşteriye söylerse bu idari değil adli bir suç olup 1-3 yıl hapis riskini doğurur.",
+      "Bir bankada kimlik tespiti ihlalinde finansal kuruluş cezası, yeniden değerlenmiş maktu cezanın iki katı ile işlem tutarının yüzde beşinden yüksek olan tutardır; yöneticinin dörtte bir cezası ise md. 13/2-3 kapsamındaki uyum yükümlülüğü ihlaline ve ihtar şartlarına ilişkindir; aynı bankada bir çalışan ŞİB yapıldığını müşteriye söylerse bu idari değil adli bir suç olup 1-3 yıl hapis riskini doğurur.",
     legalAnchors: ["5549 sayılı Kanun md. 13 (idari para cezası)", "5549 sayılı Kanun md. 14 (adli ceza)", "5549 sayılı Kanun md. 28 (yeniden değerleme, VUK oranı esaslı)"],
     reviewCards: [
-      { term: "Temel maktu cezalar", detail: "Kimlik tespiti/devamlı bilgi verme: 30.000 TL; ŞİB yapmama: 50.000 TL (md. 13/1, yıllık yeniden değerleme ile artar)." },
-      { term: "Finansal kuruluş çarpanı", detail: "İşlem tutarının en az %5'i, iki kat oranında; yıllık tavan 40.000.000 TL (diğerlerinde 4.000.000 TL)." },
-      { term: "YKÜ/üst düzey yönetici cezası", detail: "Yükümlüye kesilen idari para cezasının 1/4'ü oranında ayrıca uygulanabilir." },
+      { term: "Kanundaki baz cezalar", detail: "30.000 / 50.000 TL kanuni baz tutarlardır; ihlal yılına ait yeniden değerlenmiş tutarlar uygulanır (md. 13/1, 28)." },
+      { term: "Finansal kuruluş hesabı", detail: "Yeniden değerlenmiş maktu cezanın 2 katı ile işlem tutarının %5'inden yüksek olan alınır; kanuni tavanlar da yeniden değerlenir." },
+      { term: "Yönetici cezasının kapsamı", detail: "Uyum ihlali (md. 13/2-3), ihtar ve süre şartlarıyla 1/4; her idari ihlale otomatik olarak değil." },
       { term: "Adli ceza kapsamı", detail: "ŞİB gizliliği + bilgi-belge verme + muhafaza-ibraz ihlalleri: 1-3 yıl hapis + 5.000 güne kadar adli para cezası." },
     ],
     miniQuizSeed: ["Hangi ihlaller idari değil adli ceza riski taşır?", "Finansal kuruluşlarda ceza nasıl hesaplanır ve yıllık tavan nedir?"],
@@ -864,10 +876,10 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
       "Uzaktan Kimlik Tespiti (UKT), müşteri ile yükümlünün fiziksel olarak aynı ortamda bulunmasına gerek kalmadan kimlik doğrulamasını sağlar; hem sektörel mevzuatın (BDDK/SPK) izni hem de MASAK'ın 19 No'lu Genel Tebliği'ndeki usul birlikte aranır. Süreç görüntülü görüşme veya yapay zekâ destekli otomatik doğrulama ile yürütülür; her durumda çevrimiçi, kesintisiz ve gerçek zamanlı olması, canlılık testi ve biyometrik yüz eşleşmesi içermesi zorunludur.",
     examFocus: "UKT'nin hukuki dayanağı, NFC/güvenlik öğesi doğrulaması, ilk finansal hareket kuralı ve UKT yapamayacak yükümlüler.",
     mustKnow: [
-      "UKT için hem sektörel mevzuatın (BDDK, SPK vb.) izni hem de MASAK 19 No'lu Genel Tebliği'ndeki düzenleme birlikte bulunmalıdır; mevcut çerçeve sadece gerçek kişiler içindir.",
+      "UKT için hem sektörel mevzuatın (BDDK, SPK vb.) izni hem de MASAK 19 No'lu Genel Tebliği'ndeki düzenleme birlikte bulunmalıdır; gerçek kişiler ile ticaret siciline kayıtlı tüzel kişiler, ilgili sektörel ve temsil doğrulama şartlarıyla kapsamdadır.",
       "Yeni nesil kimlik kartlarındaki çip NFC ile doğrulanır; NFC mümkün değilse hologram, mikro yazı ve kinegram gibi en az dört farklı güvenlik öğesinin görüntülü görüşmede teyit edilmesi gerekir.",
       "Canlılık testi (liveness detection) ve kimlik fotoğrafı ile o anki yüzün biyometrik eşleşmesi sürecin ayrılmaz parçasıdır.",
-      "UKT ile açılan hesapta ilk finansal hareketin, müşterinin daha önce yüz yüze kimlik tespiti yapılmış bir banka hesabından gelmesi şarttır.",
+      "NFC yerine yalnız görsel güvenlik unsurlarıyla doğrulamada ilk finansal hareket, müşterinin tanınması esaslarının uygulandığı başka bir finansal kuruluş üzerinden yapılır. KVHS için para yatırma/çekme ayrıca müşterinin kimliğiyle uyumlu banka veya kredi kartı hesabından yapılır; bu kurallar tüm uzaktan hesaplara tek biçimde genellenmez.",
       "Süreçte insan müdahalesi olmadan yapay zekâ kullanılıyorsa, yanlış kabul oranının on milyonda birden (1/10.000.000) az olduğunu gösteren bir TSE raporu gerekir (MASAK Genel Tebliği Sıra No: 19); yurt dışı menşeli ürünlerde uluslararası geçerliliği olan bir sertifika varsa TSE raporu aranmayabilir.",
       "Gizlilik odaklı (privacy coin) kripto varlık sunan platformlar ile MASAK'ça yetkilendirilmeyen yükümlüler (ör. kuyumcu, emlakçı) UKT yapamaz.",
     ],
@@ -882,10 +894,10 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     reviewCards: [
       { term: "Hukuki dayanak", detail: "Sektörel mevzuat izni + MASAK 19 No'lu Tebliği birlikte gerekir." },
       { term: "Doğrulama katmanları", detail: "NFC (veya 4 güvenlik öğesi), canlılık testi, biyometrik yüz eşleşmesi." },
-      { term: "İlk finansal hareket", detail: "Müşterinin yüz yüze doğrulanmış banka hesabından gelmelidir." },
-      { term: "Kapsam dışı", detail: "Tüzel kişiler, privacy coin sunan KVHS'ler ve yetkilendirilmemiş yükümlüler UKT yapamaz." },
+      { term: "İlk finansal hareket", detail: "Yalnız görsel doğrulama ve KVHS için ayrı hükümler vardır; bütün uzaktan hesaplara tek kural uygulanmaz." },
+      { term: "Kapsam dışı", detail: "Ticaret siciline kayıtlı tüzel kişiler koşullu olarak kapsamdadır; her yükümlü bu yöntemi serbestçe kullanamaz. Gizlilik tabanlı kripto varlık yasağı ayrı bir yükümlülüktür." },
     ],
-    miniQuizSeed: ["NFC doğrulaması yapılamazsa hangi asgari kural uygulanır?", "UKT ile açılan hesapta ilk finansal hareket kuralı nedir?"],
+    miniQuizSeed: ["NFC doğrulaması yapılamazsa hangi asgari kural uygulanır?", "Yalnız görsel güvenlik unsurlarıyla uzaktan kimlik doğrulamada ilk finansal hareket için hangi ek güvence aranır?"],
   },
   "diger-yukumlulukler": {
     priority: "short",
@@ -924,9 +936,10 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     pdfRange: "MASAK_Rehber s. 165-226",
     coreNarrative:
       "Müşterinin tanınması (KYC), sadece kimlik almak değil; gerçek faydalanıcının tespiti, ilişki boyunca sürekli izleme ve risk seviyesine göre basitleştirilmiş veya sıkılaştırılmış tedbir uygulamasıdır. Gerçek kişilerde ad-soyad, doğum tarihi, T.C. kimlik numarası ve kimlik belge türü/numarası mutlaka teyit edilir; meslek bilgisi alınır ama teyidi zorunlu değildir. Gerçek faydalanıcı, tüzel yapının %25'ini aşan hisseye sahip gerçek kişi ortak, yoksa nihai kontrol sahibi gerçek kişi, o da yoksa ticaret sicilindeki en üst düzey icra yetkilisi olarak üç aşamalı bulunur.",
-    examFocus: "Teyit edilmesi zorunlu/zorunlu olmayan bilgiler, gerçek faydalanıcı hiyerarşisi, PEP/sıkılaştırılmış tedbir ve basitleştirilmiş tedbirin sınırı.",
+    examFocus: "7 Ekim 2026 sonrası 370.000/30.000 TL eşikleri; tutardan bağımsız kimlik tespiti; gerçek faydalanıcı, PEP ve basitleştirilmiş tedbir sınırları.",
     mustKnow: [
-      "Gerçek kişilerde ad-soyad, doğum tarihi, T.C. kimlik numarası ve kimlik belgesinin tür/numarası mutlaka güvenilir belgeyle teyit edilir; meslek ve iletişim bilgisi alınır ama teyidi zorunlu değildir.",
+      "7 Ekim 2026 sonrası genel işlem/bağlantılı toplam eşiği 370.000 TL, KVHS ve ilgili elektronik/kripto transfer eşiği 30.000 TL'dir. Sürekli ilişki, ŞİB gerektiren durum ve eski kimlik bilgisine kuşkuda tutar aranmaz.",
+      "Gerçek kişilerde ad-soyad, doğum tarihi, T.C. kimlik numarası ve kimlik belgesinin tür/numarası belgeyle teyit edilir; kimlik bilgisini almak ve doğrulamak farklı adımlardır. Özel istisnalar ilgili belge ve usul kapsamında okunur.",
       "Adres teyidi sadece sürekli iş ilişkisi tesisinde zorunludur (yerleşim yeri belgesi, son 3 aya ait fatura vb.); tüzel kişilerde teyit kaynağı MERSİS veya Ticaret Sicili Gazetesi'dir.",
       "Gerçek faydalanıcı üç aşamada belirlenir: önce %25'i aşan hisseye sahip gerçek kişi ortak aranır, yoksa oy hakkı/YK atama gücüyle nihai kontrolü elinde tutan gerçek kişi aranır, o da bulunamazsa ticaret sicilindeki en üst düzey icra yetkilisi (GM/CEO) gerçek faydalanıcı kabul edilir.",
       "Yabancı kamusal nüfuz sahibi kişiler (PEP) her zaman yüksek riskli kabul edilir; yerli PEP ve uluslararası kuruluş görevlileri ise yükümlünün kendi risk değerlendirmesine göre sıkılaştırılmış tedbire tabi tutulur.",
@@ -946,7 +959,7 @@ const baseLessonContentById: Record<string, BaseLessonContent> = {
     legalAnchors: ["Tedbirler Yönetmeliği md. 5-26/A", "5549 sayılı Kanun md. 3, md. 15", "mufettis.org Modül 2 §5-7"],
     reviewCards: [
       { term: "Teyidi zorunlu bilgiler", detail: "Ad-soyad, doğum tarihi, TCKN, kimlik belge tür/no; meslek bilgisi teyide tabi değildir." },
-      { term: "Gerçek faydalanıcı", detail: "%25 hisse sahibi -> nihai kontrol sahibi -> en üst düzey icra yetkilisi (üç aşamalı arama)." },
+      { term: "Gerçek faydalanıcı", detail: "%25'i aşan pay sahibi -> nihai kontrol sahibi -> en üst düzey icra yetkilisi; tam %25 eşikle aynı değildir." },
       { term: "PEP", detail: "Yabancı PEP her zaman yüksek riskli; görevden ayrılsa da en az 1 yıl sıkılaştırılmış tedbir sürer." },
       { term: "Basitleştirilmiş tedbir", detail: "Şüphe anında derhal sona eren bir kolaylıktır, muafiyet değildir." },
       { term: "Sıkılaştırılmış tedbir", detail: "Üst düzey onay + servet kaynağı araştırması + yoğun izleme gerektirir." },
@@ -1088,7 +1101,7 @@ const lessonV4Blueprints: Record<string, LessonV4Blueprint> = {
     glossary: [{ term: "İmtina", detail: "Yükümlünün mevzuat gereği işlemi gerçekleştirmekten kaçınmasıdır." }],
   },
   "fintek-riskleri": {
-    deepDiveTitles: ["Dijital kanal risk mantığı", "Ödeme ve elektronik para kuruluşları", "Açık bankacılık ve API riski", "KVHS müşteri kabulü", "Kripto transferlerinde seyahat kuralı", "Eksik bilgi gönderen sağlayıcı", "15.000 TL teyit eşiği"],
+    deepDiveTitles: ["Dijital kanal risk mantığı", "Ödeme ve elektronik para kuruluşları", "Açık bankacılık ve API riski", "KVHS müşteri kabulü", "Kripto transferlerinde seyahat kuralı", "Eksik bilgi gönderen sağlayıcı", "30.000 TL teyit eşiği"],
     deepDiveNotes: [
       "Dijital kanal düşük risk anlamına gelmez; hız, uzaktan erişim, anonimleşme, çoklu hesap ve sınır aşan hareket kapasitesi farklı kontrol ihtiyacı doğurur.",
       "Ödeme ve elektronik para kuruluşlarında müşteri kabulü, cüzdan limiti, işlem hacmi, alıcı-gönderici ilişkisi ve şüpheli örüntü izleme birlikte çalışır.",
@@ -1096,7 +1109,7 @@ const lessonV4Blueprints: Record<string, LessonV4Blueprint> = {
       "KVHS müşteri kabulünde kimlik, gerçek faydalanıcı, transfer tarafı bilgisi ve riskli cüzdan/karşı sağlayıcı bağlantısı dikkate alınır.",
       "Seyahat kuralı, kripto transferlerinde gönderen ve alıcı bilgilerinin transferle birlikte izlenmesini sağlar; eksik bilgi işlem riskini yükseltir.",
       "Sürekli eksik veya hatalı bilgi gönderen sağlayıcıyla ilişki sınırlandırma, askıya alma veya sonlandırma gündeme gelebilir.",
-      "15.000 TL teyit eşiği, belirli kripto transferlerinde gönderen bilgilerinin doğruluğunu ayrıca teyit etme refleksi üretir; eşiğin altı otomatik risksiz demek değildir.",
+      "30.000 TL teyit eşiği, belirli kripto transferlerinde gönderen bilgilerinin doğruluğunu ayrıca teyit etme refleksi üretir; eşiğin altı otomatik risksiz demek değildir.",
     ],
     tableThemes: ["Elektronik transfer ve kripto transfer ayrımı", "Dijital ürün riskleri"],
     caseThemes: ["Eksik taraf bilgisiyle gelen kripto transferi", "API kanalında olağan dışı işlem yoğunluğu"],
@@ -1415,7 +1428,7 @@ export const mnemonics: MnemonicCard[] = [
     hook: "95 Brüksel doğumlu Egmont, 98'de MASAK'ı ağırladı",
     expansion: "Egmont Grubu 1995'te Brüksel'de kuruldu, MASAK 1998'de üye oldu",
     story: "Brüksel'de 1995'te kurulan Egmont kulübüne, 1998'de MASAK üyelik kartını alıp giriyor.",
-    targetFact: "Egmont Grubu 1995'te Brüksel'de kuruldu, MASAK 1998'de üye oldu; 182 ülkenin MİB'i üyedir.",
+    targetFact: "Egmont Grubu 1995'te Brüksel'de kuruldu, MASAK 1998'de üye oldu; Şubat 2026 Egmont açıklamasına göre 182 üye MİB bulunur.",
   },
   {
     id: "mn-ulusal-koordinasyon-1",
@@ -1436,10 +1449,10 @@ export const mnemonics: MnemonicCard[] = [
   {
     id: "mn-ulusal-koordinasyon-3",
     lessonId: "ulusal-koordinasyon",
-    hook: "21-25 AKTF, 25-29 KİSYF",
-    expansion: "2021-2025 Strateji Belgesi AK/TF'ye, 2025-2029 Strateji Belgesi KİSYF'ye odaklanır",
-    story: "Bir takvimde iki dönem işaretli: 2021-2025 arası 'AKTF' yazıyor, 2025-2029 arası 'KİSYF' yazıyor — sırayla bayrak değişiyor.",
-    targetFact: "2021-2025 Strateji Belgesi aklama/TF'ye odaklanır (5 ana amaç); 2025-2029 Strateji Belgesi KİSYF ile mücadeleye odaklanır.",
+    hook: "26-30 AKTF, 25-29 KİSYF",
+    expansion: "2026-2030 Strateji Belgesi AK/TF'ye, 2025-2029 Strateji Belgesi KİSYF'ye odaklanır",
+    story: "Bir takvimde iki dönem işaretli: 2026-2030 arası 'AKTF' yazıyor, 2025-2029 arası 'KİSYF' yazıyor — sırayla bayrak değişiyor.",
+    targetFact: "2026-2030 Strateji Belgesi aklama/TF'ye odaklanır (5 ana amaç); 2025-2029 Strateji Belgesi KİSYF ile mücadeleye odaklanır.",
   },
   {
     id: "mn-aklama-1",
@@ -1565,17 +1578,17 @@ export const mnemonics: MnemonicCard[] = [
     id: "mn-fintek-riskleri-1",
     lessonId: "fintek-riskleri",
     hook: "FAST hep açık, EFT mesaide, SWIFT sadece mektup taşır",
-    expansion: "FAST 7/24 anlık çalışır (günlük limit 250.000 TL), EFT mesai saatlerinde çalışır, SWIFT bir ödeme sistemi değil sadece mesajlaşma ağıdır",
-    story: "FAST gişesi gece gündüz açık (7/24, günde 250.000 TL'ye kadar), EFT gişesi sadece mesai saatinde açık, SWIFT ise para değil sadece zarf taşıyan bir postacıdır.",
-    targetFact: "FAST 7/24 anlık çalışır ve günlük limiti 250.000 TL'dir; EFT mesai saatleri içinde çalışır; SWIFT bir ödeme sistemi değil uluslararası mesajlaşma ağıdır.",
+    expansion: "FAST 7/24 anlık çalışır (26 Ağustos 2026 itibarıyla işlem başına limit 300.000 TL), EFT mesai saatlerinde çalışır, SWIFT bir ödeme sistemi değil sadece mesajlaşma ağıdır",
+    story: "FAST gişesi gece gündüz açık (7/24, işlem başına 300.000 TL'ye kadar), EFT gişesi sadece mesai saatinde açık, SWIFT ise para değil sadece zarf taşıyan bir postacıdır.",
+    targetFact: "FAST 7/24 anlık çalışır ve 26 Ağustos 2026 itibarıyla işlem limiti 300.000 TL'dir; EFT mesai saatleri içinde çalışır; SWIFT bir ödeme sistemi değil uluslararası mesajlaşma ağıdır.",
   },
   {
     id: "mn-fintek-riskleri-2",
     lessonId: "fintek-riskleri",
-    hook: "15 binde pasaport sorulur",
-    expansion: "Seyahat Kuralı (Travel Rule): 15.000 TL ve üzerindeki kripto transferlerinde taraf bilgisi zorunludur",
-    story: "Gişe memuru 15.000 TL'lik bir kripto transferinde elini kaldırıp 'kimlik bilgisi lazım' der; altındaki tutarlarda bu talep yoktur ama risk sıfırlanmaz.",
-    targetFact: "Seyahat Kuralı: 15.000 TL ve üzerindeki kripto transferlerinde gönderen ve alıcıya ait kimlik/hesap bilgileri transfer mesajına eklenir.",
+    hook: "30 bin sınırı: bilgi her tutarda, ek teyit eşik üstünde",
+    expansion: "Seyahat Kuralı her tutarda taraf bilgisi içerir; 30.000 TL ve üzerinde gönderene ilişkin ek bilgi ve teyit aranır",
+    story: "Gişe memuru 30.000 TL'lik bir kripto transferinde elini kaldırıp 'kimlik bilgisi lazım' der; altındaki tutarlarda da taraf adı ve cüzdan/referans bilgisi alınır, bu mesaj bilgilerinde teyit şartı aranmaz.",
+    targetFact: "Seyahat Kuralı: 30.000 TL ve üzerindeki kripto transferlerinde gönderen ve alıcıya ait kimlik/hesap bilgileri transfer mesajına eklenir.",
   },
   {
     id: "mn-fintek-riskleri-3",
@@ -1597,10 +1610,10 @@ export const mnemonics: MnemonicCard[] = [
   {
     id: "mn-uyum-yonetimi-2",
     lessonId: "uyum-yonetimi",
-    hook: "65 ortalama, 50 baraj, 3 yılda yenile, 5 yılda sil",
-    expansion: "Lisans sınavında genel ortalama en az 65, her modülden en az 50; her 3 yılda bir yenileme eğitimi; 5 yıl aksarsa lisans tamamen iptal",
-    story: "Bir karne hayal et: genel not '65' üstünde olmalı, ama hiçbir ders '50'nin altına düşmemeli. Karne her '3' yılda yenilenir; '5' yıl karne almazsan okuldan atılırsın (lisans iptal).",
-    targetFact: "Lisans sınavında genel başarı notu en az 65, her modülden en az 50 puan şarttır; her 3 yılda bir yenileme eğitimi gerekir; 5 yıl geçerse lisans tamamen iptal olur.",
+    hook: "65 ortalama, 50 baraj; 3 yılda yenile, askı ile iptali ayır",
+    expansion: "Lisans sınavında genel ortalama en az 65, her modülden en az 50; her 3 yılda bir yenileme eğitimi; sınav/son eğitim bitişinden 5 yıl içinde askı kaldırma başvurusu yapılmazsa iptal",
+    story: "Bir karne hayal et: genel not '65' üstünde olmalı, ama hiçbir ders '50'nin altına düşmemeli. Karne her '3' yılda yenilenir; yenileme yapılmazsa askıya alınırsın; beş yıllık başvuru sınırı sınav/son eğitimden sayılır.",
+    targetFact: "Lisans sınavında genel başarı notu en az 65, her modülden en az 50 puan şarttır; her 3 yılda bir yenileme eğitimi gerekir; yenileme yapılmazsa askıya alınır; sınav/son eğitim bitişinden 5 yılda başvuru yapılmazsa iptal edilir.",
   },
   {
     id: "mn-uyum-yonetimi-3",
@@ -1614,25 +1627,25 @@ export const mnemonics: MnemonicCard[] = [
     id: "mn-denetim-idari-ceza-1",
     lessonId: "denetim-idari-ceza",
     hook: "30'da kimliğini söyle, 50'de ŞİB'i unutma",
-    expansion: "Kimlik tespiti/devamlı bilgi verme ihlalinde 30.000 TL, ŞİB yapmama ihlalinde 50.000 TL maktu idari para cezası",
+    expansion: "Kanundaki baz tutar kimlik/devamlı bilgi vermede 30.000 TL, ŞİB ihlalinde 50.000 TL; yeniden değerleme sonrası uygulanacak idari para cezası",
     story: "İki fiyat etiketi düşün: 'Kimliğini söylemedin: 30.000 TL', 'ŞİB'i unuttun: 50.000 TL' — ikisi de md. 13/1'in temel etiketleridir.",
-    targetFact: "5549 sayılı Kanun md. 13/1 uyarınca kimlik tespiti/devamlı bilgi verme ihlalinde 30.000 TL, ŞİB yapmama ihlalinde 50.000 TL maktu idari para cezası uygulanır.",
+    targetFact: "5549 sayılı Kanun md. 13/1'deki 30.000/50.000 TL baz tutarlardır; fiilen uygulanacak ceza ilgili yıl için yeniden değerlenir.",
   },
   {
     id: "mn-denetim-idari-ceza-2",
     lessonId: "denetim-idari-ceza",
     hook: "5-2-40-4: yüzde beş, iki kat, kırk milyon finansal, dört milyon diğer",
-    expansion: "Finansal kuruluş cezası işlem tutarının en az %5'i, iki kat oranında hesaplanır; yıllık tavan finansal kuruluşta 40.000.000 TL, diğer yükümlülerde 4.000.000 TL",
+    expansion: "Finansal kuruluş cezası yeniden değerlenmiş maktu tutarın iki katı ile işlemin %5'inden yüksek olanıdır; tavanlar da yeniden değerlenir",
     story: "Bir hesap makinesi hayal et: ekranda sırayla '%5', 'x2', '40.000.000', '4.000.000' rakamları yanıp söner — finansal kuruluş cezasının dört anahtar sayısı.",
-    targetFact: "Finansal kuruluşlarda ceza işlem tutarının en az %5'i, iki kat oranında hesaplanır; yıllık tavan finansal kuruluşlarda 40.000.000 TL, diğer yükümlülerde 4.000.000 TL'dir.",
+    targetFact: "Finansal kuruluşta yeniden değerlenmiş maktu cezanın iki katı ile işlem tutarının %5'inden yüksek olan tutar alınır. 40 milyon/4 milyon TL kanuni baz tavanlar da yeniden değerlenir.",
   },
   {
     id: "mn-denetim-idari-ceza-3",
     lessonId: "denetim-idari-ceza",
     hook: "Yöneticiye çeyrek düşer",
-    expansion: "Yönetim kurulu üyesi/sorumlu üst düzey yöneticiye, yükümlüye kesilen cezanın 1/4'ü oranında ayrıca ceza uygulanabilir",
+    expansion: "Md. 13/2-3 uyum ihlalinde ihtar/süre koşullarıyla sorumlu YK üyesine, yoksa üst düzey yöneticiye 1/4 ceza; tüm ihlallere değil",
     story: "Büyük cezayı dört eşit dilime böl; en küçük dilimi (çeyreği) sorumlu yönetici de yer.",
-    targetFact: "Yönetim kurulu üyesi veya sorumlu üst düzey yöneticiye, yükümlüye kesilen idari para cezasının dörtte biri (1/4) oranında ayrıca ceza uygulanabilir.",
+    targetFact: "5549 md. 13/2 kapsamındaki uyum yükümlülüğü ihlalinde, md. 13/3 uyarınca sorumlu yönetim kurulu üyesine, yoksa üst düzey yöneticiye, aynı ihtar ve süre şartlarıyla cezanın dörtte biri uygulanır; her ihlale otomatik olarak uygulanmaz.",
   },
   {
     id: "mn-uzaktan-kimlik-1",
@@ -1645,10 +1658,10 @@ export const mnemonics: MnemonicCard[] = [
   {
     id: "mn-uzaktan-kimlik-2",
     lessonId: "uzaktan-kimlik",
-    hook: "İlk para, yüz yüze tanıdık hesaptan gelir",
-    expansion: "UKT ile açılan hesapta ilk finansal hareket, müşterinin daha önce yüz yüze kimlik tespiti yapılmış bir banka hesabından gelmelidir",
+    hook: "Yalnız görsel doğrulamada ilk harekete ek güvence",
+    expansion: "Yalnız görsel doğrulamaya izin verilen hallerde ilk hareket, KYC uygulanan başka finansal kuruluş üzerinden yapılır; KVHS için ayrı para yatırma/çekme hükmü vardır",
     story: "Yeni uzaktan açılan hesaba ilk para girerken, gönderen hesabın da 'yüz yüze tanışılmış' bir hesap olması gerekir — tanımadığın bir kapıdan ilk para giremez.",
-    targetFact: "UKT ile açılan hesapta ilk finansal hareketin, müşterinin daha önce yüz yüze kimlik tespiti yapılmış bir banka hesabından gelmesi şarttır.",
+    targetFact: "NFC yerine yalnız görsel güvenlik unsurlarıyla doğrulamada ilk finansal hareket, müşterinin tanınması esaslarının uygulandığı başka bir finansal kuruluş üzerinden yapılır. KVHS için para yatırma/çekme ayrıca müşterinin kimliğiyle uyumlu banka veya kredi kartı hesabından yapılır; bu kurallar tüm uzaktan hesaplara tek biçimde genellenmez.",
   },
   {
     id: "mn-uzaktan-kimlik-3",
@@ -1775,8 +1788,8 @@ export const memoryPalaces: MemoryPalace[] = [
         order: 9,
         location: "Sunucu odası",
         lessonId: "fintek-riskleri",
-        image: "Üç ekran yan yana: 'FAST 7/24 - 250.000 TL', 'EFT mesai saati', 'SWIFT sadece mesaj'; köşede '15.000 TL' yazan bir kripto terminali.",
-        detail: "FAST 7/24 anlık çalışır (günlük 250.000 TL), EFT mesai saatinde çalışır, SWIFT sadece mesajlaşma ağıdır; Seyahat Kuralı 15.000 TL ve üzeri kripto transferinde uygulanır.",
+        image: "Üç ekran yan yana: 'FAST 7/24 - 300.000 TL/işlem', 'EFT mesai saati', 'SWIFT sadece mesaj'; köşede '30.000 TL' yazan bir kripto terminali.",
+        detail: "FAST 7/24 anlık çalışır (işlem başına 300.000 TL), EFT mesai saatinde çalışır, SWIFT sadece mesajlaşma ağıdır; Seyahat Kuralı 30.000 TL ve üzeri kripto transferinde uygulanır.",
       },
     ],
   },
@@ -1791,14 +1804,14 @@ export const memoryPalaces: MemoryPalace[] = [
         location: "Yönetim kurulu toplantı odası",
         lessonId: "uyum-yonetimi",
         image: "Altı bölmeli bir pano: Politika-Risk-İzleme/Kontrol-Uyum Görevlisi-Eğitim-İç Denetim; duvarda '65 ortalama / 50 baraj / 3 yılda yenile / 5 yılda sil' yazan bir sertifika çerçevesi.",
-        detail: "Uyum programının 6 bileşeni ve lisans sınavının 65 ortalama/50 baraj, 3 yılda bir yenileme, 5 yılda tam iptal kuralları.",
+        detail: "Uyum programının 6 bileşeni ve lisans sınavının 65 ortalama/50 baraj, 3 yılda bir yenileme, askıya alma ve 5 yıllık başvuru sınırı kuralları.",
       },
       {
         order: 2,
         location: "Kasa / ceza masası",
         lessonId: "denetim-idari-ceza",
         image: "Fiyat etiketli bir tezgah: '30.000 TL' ve '50.000 TL' iki etiket; yanında '%5 x2 / 40.000.000 TL / 4.000.000 TL' yazan büyük bir pano; köşede 'yöneticiye çeyrek' yazan küçük bir dilim.",
-        detail: "Kimlik/bilgi ihlali 30.000 TL, ŞİB yapmama 50.000 TL; finansal kuruluşta işlem tutarının en az %5'i x2, yıllık tavan 40.000.000 TL (diğerlerinde 4.000.000 TL); yöneticiye cezanın 1/4'ü uygulanabilir.",
+        detail: "30.000/50.000 TL baz tutarlardır, güncel yıl için yeniden değerlenir. Finansal kuruluşta maktu cezanın iki katı ile işlem tutarının %5'inden yüksek olan esas alınır. Yöneticiye 1/4 yalnız md. 13/2-3 uyum ihlali ve ihtar şartlarıyla uygulanır.",
       },
       {
         order: 3,
@@ -1846,9 +1859,9 @@ export const recallDrills: RecallDrill[] = [
     prompt: "Aklama suçlarında en yüksek risk ___, en düşük risk ___tir.",
     answer: "dolandırıcılık; tefecilik", keywords: ["dolandırıcılık", "tefecilik"] },
   { id: "rd-ulusal-koordinasyon-2", lessonId: "ulusal-koordinasyon", type: "closed-book",
-    prompt: "2021-2025 ve 2025-2029 Strateji Belgelerinin odak noktalarını karşılaştır.",
-    answer: "2021-2025 Strateji Belgesi aklama/terörün finansmanına odaklanır (5 ana amaç); 2025-2029 Strateji Belgesi KİSYF ile mücadeleye odaklanır.",
-    keywords: ["2021-2025", "aklama/TF", "2025-2029", "KİSYF"] },
+    prompt: "2026-2030 ve 2025-2029 Strateji Belgelerinin odak noktalarını karşılaştır.",
+    answer: "2026-2030 Strateji Belgesi aklama/terörün finansmanına odaklanır (5 ana amaç); 2025-2029 Strateji Belgesi KİSYF ile mücadeleye odaklanır.",
+    keywords: ["2026-2030", "aklama/TF", "2025-2029", "KİSYF"] },
 
   { id: "rd-aklama-1", lessonId: "aklama", type: "fill-blank",
     prompt: "Aklamanın üç aşaması sırasıyla ___, ___ ve ___tir.",
@@ -1892,12 +1905,12 @@ export const recallDrills: RecallDrill[] = [
     keywords: ["yükümlü talebi", "re'sen", "yabancı FIU"] },
 
   { id: "rd-fintek-riskleri-1", lessonId: "fintek-riskleri", type: "fill-blank",
-    prompt: "FAST günde en fazla ___ TL işler ve ___ çalışır; EFT ___ saatlerinde çalışır.",
-    answer: "250.000; 7/24; mesai", keywords: ["250.000", "7/24", "mesai"] },
+    prompt: "FAST işlem başına en fazla ___ TL aktarır ve ___ çalışır; EFT ___ saatlerinde çalışır.",
+    answer: "300.000; 7/24; mesai", keywords: ["300.000", "7/24", "mesai"] },
   { id: "rd-fintek-riskleri-2", lessonId: "fintek-riskleri", type: "closed-book",
     prompt: "Seyahat Kuralı'nın (Travel Rule) hangi tutardan itibaren ve ne şekilde uygulandığını anlat.",
-    answer: "15.000 TL ve üzerindeki kripto transferlerinde gönderen ve alıcıya ait kimlik/hesap bilgileri transfer mesajına eklenir; eksik bilgi tamamlatılır, sağlanamazsa işlem iade edilir.",
-    keywords: ["15.000 TL", "taraf bilgisi", "iade"] },
+    answer: "30.000 TL ve üzerindeki kripto transferlerinde gönderen ve alıcıya ait kimlik/hesap bilgileri transfer mesajına eklenir; eksik bilgi tamamlatılır, sağlanamazsa işlem iade edilir.",
+    keywords: ["30.000 TL", "taraf bilgisi", "iade"] },
 
   { id: "rd-uyum-yonetimi-1", lessonId: "uyum-yonetimi", type: "fill-blank",
     prompt: "Uyum programının altı bileşeni: kurum politikası, ___, izleme-kontrol, ___, eğitim, ___tir.",
@@ -1905,15 +1918,15 @@ export const recallDrills: RecallDrill[] = [
     keywords: ["risk yönetimi", "uyum görevlisi", "iç denetim"] },
   { id: "rd-uyum-yonetimi-2", lessonId: "uyum-yonetimi", type: "closed-book",
     prompt: "Uyum görevlisi lisans sınavının puanlama kuralını ve yenileme döngüsünü anlat.",
-    answer: "Genel ortalama en az 65, her modülden en az 50 puan alınmalıdır; lisans her 3 yılda bir yenileme eğitimi gerektirir, 5 yıl aksarsa lisans tamamen iptal olur.",
+    answer: "Genel ortalama en az 65, her modülden en az 50 puan alınmalıdır; lisans her 3 yılda bir yenileme eğitimi gerektirir, üç yılda yenileme yapılmazsa askıya alınır; sınav veya son eğitim bitişinden beş yıl içinde askının kaldırılması için başvurulmazsa iptal edilir.",
     keywords: ["65 ortalama", "50 baraj", "3 yıl", "5 yıl"] },
 
   { id: "rd-denetim-idari-ceza-1", lessonId: "denetim-idari-ceza", type: "fill-blank",
-    prompt: "Kimlik tespiti/devamlı bilgi verme ihlalinde ___ TL, ŞİB yapmama ihlalinde ___ TL idari para cezası uygulanır.",
+    prompt: "5549 md. 13/1'de yazılı kanuni baz tutarlar kimlik/devamlı bilgi vermede ___ TL, ŞİB ihlalinde ___ TL'dir; güncel yıl tutarı ayrıca artırılır.",
     answer: "30.000; 50.000", keywords: ["30.000", "50.000"] },
   { id: "rd-denetim-idari-ceza-2", lessonId: "denetim-idari-ceza", type: "closed-book",
     prompt: "Finansal kuruluşlarda idari para cezası nasıl hesaplanır ve yıllık tavanları nedir?",
-    answer: "İşlem tutarının en az %5'i, iki kat oranında hesaplanır; yıllık tavan finansal kuruluşlarda 40.000.000 TL, diğer yükümlülerde 4.000.000 TL'dir.",
+    answer: "Finansal kuruluşta yeniden değerlenmiş maktu cezanın iki katı ile işlemin %5'inden yüksek olan tutar alınır; kanuni baz tavanlar ilgili yıl için güncellenir.",
     keywords: ["%5", "iki kat", "40.000.000", "4.000.000"] },
 
   { id: "rd-uzaktan-kimlik-1", lessonId: "uzaktan-kimlik", type: "fill-blank",
@@ -1921,8 +1934,8 @@ export const recallDrills: RecallDrill[] = [
     answer: "dört (4)", keywords: ["dört", "4"] },
   { id: "rd-uzaktan-kimlik-2", lessonId: "uzaktan-kimlik", type: "closed-book",
     prompt: "UKT ile açılan hesapta ilk finansal hareket kuralını ve yapay zekâ kullanımında aranan TSE şartını anlat.",
-    answer: "İlk finansal hareketin müşterinin daha önce yüz yüze kimlik tespiti yapılmış bir banka hesabından gelmesi şarttır; insan müdahalesi olmadan yapay zekâ kullanılıyorsa yanlış kabul oranının on milyonda birden az olduğunu gösteren TSE raporu gerekir.",
-    keywords: ["yüz yüze hesap", "on milyonda bir", "TSE"] },
+    answer: "Yalnız görsel kimlik kartı doğrulamasında ilk hareket KYC uygulanmış başka finansal kuruluş üzerinden yapılır; bütün uzaktan hesaplar için yüz yüze banka hesabı genellemesi kurulmaz. Yapay zekâ ile doğrulamada ilgili TSE/sertifika şartı ayrıca değerlendirilir.",
+    keywords: ["görsel doğrulama", "başka finansal kuruluş", "TSE"] },
 
   { id: "rd-diger-yukumlulukler-1", lessonId: "diger-yukumlulukler", type: "fill-blank",
     prompt: "Muhafaza süresi ___ yıldır (5549 sayılı Kanun md. ___).",
@@ -1979,7 +1992,7 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       ],
       answer: 0,
       explanation: "MASAK analiz ve paylaşım yapar; arama, el koyma, gözaltı ve dava açma yetkisi Cumhuriyet savcılarına/yargı makamlarına aittir.",
-      trapNote: "MASAK'a soruşturma/yaptırım yetkisi atfeden seçenekler sınavın klasik tuzağıdır.",
+      trapNote: "MASAK yükümlülük ihlallerinde idari yaptırım uygulayabilir; ancak gözaltı, kamu davası ve mahkeme hükmü yetkisiyle karıştırılmaz.",
     },
     {
       prompt: "Aşağıdakilerden hangisi 5549 sayılı Kanun md. 2 anlamında 'denetim elemanı' tanımına girmez?",
@@ -2064,7 +2077,7 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
         "FATF'in bir alt komitesidir, ayrı bir kuruluş değildir.",
       ],
       answer: 0,
-      explanation: "Egmont Grubu 1995'te Brüksel'de kuruldu, MASAK 1998'de üye oldu; 182 ülkenin MİB'i üyedir ve Egmont Güvenli Ağı (ESW) üzerinden gizli istihbarat paylaşılır.",
+      explanation: "Egmont Grubu 1995'te Brüksel'de kuruldu, MASAK 1998'de üye oldu; Şubat 2026 Egmont açıklamasına göre 182 üye MİB bulunur ve Egmont Güvenli Ağı (ESW) üzerinden gizli istihbarat paylaşılır.",
       trapNote: "Egmont'un FATF'ten bağımsız, operasyonel bir bilgi paylaşım ağı olduğu unutulmamalı.",
     },
   ],
@@ -2094,15 +2107,15 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       trapNote: "Risk sıralamasını göz ardı edip 'tüm örgütler eşittir' diyen seçenekler yanıltıcıdır.",
     },
     {
-      prompt: "2021-2025 ve 2025-2029 AML/CFT strateji belgeleri hakkında hangisi doğrudur?",
+      prompt: "2026-2030 ve 2025-2029 AML/CFT strateji belgeleri hakkında hangisi doğrudur?",
       options: [
-        "2021-2025 aklama/TF'ye, 2025-2029 KİSYF'e odaklanır; sekretaryayı MASAK yürütür.",
+        "2026-2030 aklama/TF'ye, 2025-2029 KİSYF'e odaklanır; sekretaryayı MASAK yürütür.",
         "Her iki belge de sadece KİSYF'i kapsar.",
         "Strateji belgeleri sadece kolluk için bağlayıcıdır, yükümlüleri etkilemez.",
         "Strateji belgeleri MASAK dışında bir kurum tarafından yürütülür.",
       ],
       answer: 0,
-      explanation: "2021-2025 Strateji Belgesi aklama/TF'ye odaklanır (5 ana amaç); 2025-2029 Strateji Belgesi KİSYF ile mücadeleye odaklanır; MASAK her iki sürecin sekretaryasını yürütür.",
+      explanation: "2026-2030 Strateji Belgesi aklama/TF'ye odaklanır (5 ana amaç); 2025-2029 Strateji Belgesi KİSYF ile mücadeleye odaklanır; MASAK her iki sürecin sekretaryasını yürütür.",
       trapNote: "Strateji belgelerinin yükümlüleri de etkilediği (rehber/eğitim/izleme önceliği) unutulmamalı.",
     },
   ],
@@ -2317,13 +2330,13 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
     {
       prompt: "Malvarlığının dondurulması ile el koyma/müsadere arasındaki fark için hangisi doğrudur?",
       options: [
-        "Dondurma geçici ve idari bir tedbirdir, mülkiyeti değiştirmez; sadece tasarruf yetkisini kısıtlar. El koyma/müsadere ise yargı kararıyla mülkiyetin devlete geçmesidir.",
+        "Dondurma geçici ve idari bir tedbirdir, mülkiyeti değiştirmez; sadece tasarruf yetkisini kısıtlar. El koyma geçici adli tedbirdir ve mülkiyeti devlete geçirmez; müsadere ise ayrı bir yargısal kararla malvarlığı hakkında sonuç doğurur.",
         "Dondurma ile müsadere aynı hukuki sonucu doğurur.",
         "Dondurma kararıyla mülkiyet otomatik olarak devlete geçer.",
         "Müsadere idari bir tedbirdir, yargı kararı gerektirmez.",
       ],
       answer: 0,
-      explanation: "Dondurma geçici ve idari bir tedbirdir, mülkiyeti değiştirmez; el koyma/müsadere ise yargı kararıyla mülkiyetin devlete geçmesidir.",
+      explanation: "Dondurma geçici ve idari bir tedbirdir, mülkiyeti değiştirmez; el koyma geçici adli tedbirdir ve mülkiyeti devlete geçirmez; müsadere ayrı yargısal sonuçtur.",
       trapNote: "Dondurma ile müsaderenin hukuki sonucu (mülkiyet değişimi) karıştırılır.",
     },
     {
@@ -2661,13 +2674,13 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
     {
       prompt: "Yüksek riskli bir hesaptan hızlı çıkış talimatı verildiğinde ve fonun derhal başka hesaplara dağılacağı öngörüldüğünde yükümlünün en doğru aksiyonu nedir?",
       options: [
-        "Erteleme talepli ŞİB hazırlamak ve Bakanlık kararına kadar (en fazla 7 iş günü) işlemi gerçekleştirmemek; süre dolar da karar gelmezse işlemi yapmak.",
+        "Erteleme talepli ŞİB hazırlamak ve Bakanlık kararına kadar (en fazla 7 iş günü) işlemi gerçekleştirmemek; süre sonunda diğer hukuki engelleri ayrıca kontrol etmek.",
         "Hiçbir işlem yapmadan süresiz olarak hesabı bloke etmek.",
         "Müşteriye durumu açıklayıp işlemi ertelediğini söylemek.",
         "Sadece genel ŞİB göndermek, erteleme talep etmemek çünkü tutar önemli değildir.",
       ],
       answer: 0,
-      explanation: "Yükümlü erteleme talepli ŞİB hazırlar, Bakanlık kararına kadar (en fazla 7 iş günü) işlemi gerçekleştirmez; süre dolar da karar gelmezse işlemi yapmak zorundadır.",
+      explanation: "Yükümlü erteleme talepli ŞİB hazırlar, Bakanlık kararına kadar (en fazla 7 iş günü) işlemi gerçekleştirmez; süre sonunda yalnız ertelemeden doğan imtina yükümlülüğü biter; KYC engeli veya dondurma kararı varsa işlem yapılamaz.",
       trapNote: "Süresiz bloke uygulamak veya müşteriye açıklama yapmak, ertelemenin usul ve gizlilik kurallarını ihlal eder.",
       difficulty: "Sınav",
     },
@@ -2676,26 +2689,26 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
     {
       prompt: "EFT, FAST ve SWIFT arasındaki fark için hangisi doğrudur?",
       options: [
-        "EFT mesai saatleri içinde çalışır, FAST 7/24 anlık çalışır (günlük limit 250.000 TL), SWIFT bir ödeme sistemi değil sadece mesajlaşma ağıdır.",
+        "EFT mesai saatleri içinde çalışır, FAST 7/24 anlık çalışır (26 Ağustos 2026 itibarıyla işlem başına limit 300.000 TL), SWIFT bir ödeme sistemi değil sadece mesajlaşma ağıdır.",
         "Üçü de aynı sistemin farklı isimleridir.",
         "SWIFT parayı doğrudan transfer eden tek sistemdir.",
         "FAST sadece mesai saatlerinde, EFT ise 7/24 çalışır.",
       ],
       answer: 0,
-      explanation: "EFT bankalar arası TL transferini mesai saatleri içinde yapar; FAST 7/24 anlık çalışır ve günlük limiti 250.000 TL'dir; SWIFT bir ödeme sistemi değil uluslararası mesajlaşma ağıdır.",
+      explanation: "EFT bankalar arası TL transferini mesai saatleri içinde yapar; FAST 7/24 anlık çalışır ve 26 Ağustos 2026 itibarıyla işlem limiti 300.000 TL'dir; SWIFT bir ödeme sistemi değil uluslararası mesajlaşma ağıdır.",
       trapNote: "SWIFT'in parayı doğrudan transfer ettiği sanılır; oysa sadece talimatı ileten bir mesajlaşma ağıdır.",
     },
     {
-      prompt: "Kripto varlık hizmet sağlayıcıları (KVHS) ve Seyahat Kuralı hakkında hangisi doğrudur?",
+      prompt: "7 Ekim 2026 sonrası kripto transfer mesajlarında 30.000 TL sınırı için hangisi doğrudur?",
       options: [
-        "2024'ten itibaren KVHS'ler finansal kuruluş sayılır, SPK izni gerekir; 15.000 TL ve üzeri kripto transferlerinde taraf bilgisi (Seyahat Kuralı) zorunludur.",
+        "Eşik altında da her iki tarafın ad/unvan ve cüzdan/referans bilgileri iletilir; eşik üstünde gönderen için ek bilgi ve teyit aranır.",
         "KVHS'ler finansal kuruluş sayılmaz, herhangi bir izin gerekmez.",
         "Seyahat Kuralı sadece 100.000 TL üzeri transferlerde uygulanır.",
         "KVHS'ler faiz verebilir ve kredi kullandırabilir.",
       ],
       answer: 0,
-      explanation: "2024'ten itibaren kripto varlık hizmet sağlayıcıları (KVHS) finansal kuruluş statüsündedir, SPK'dan izin almak zorundadır; Seyahat Kuralı 15.000 TL ve üzerindeki kripto transferlerinde taraf bilgisi zorunlu kılar.",
-      trapNote: "KVHS'lerin denetim dışı olduğu veya Seyahat Kuralı eşiğinin farklı bir tutar olduğu yanılgısı yaygındır.",
+      explanation: "Tedbirler Yönetmeliği md. 24/A, 30.000 TL altında da gönderene ve alıcıya ilişkin ad/unvan ve cüzdan/referans bilgisini zorunlu kılar. Eşik üstünde gönderen için ek tanımlayıcı bilgi ve teyit aranır; alıcı bilgisi aynı teyit şartına tabi değildir. Tutar 7 Ekim 2026 tarihli 11845 sayılı Kararla güncellenmiştir.",
+      trapNote: "Eşik altını bilgisiz transfer izni saymak veya iki taraf için aynı teyit şartını varsaymak yanlıştır.",
     },
   ],
   "uyum-yonetimi": [
@@ -2724,7 +2737,7 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       trapNote: "Yetki devrinin sorumluluğu da devrettiği sanılır; oysa nihai sorumluluk kurulda kalır.",
     },
     {
-      prompt: "MASAK'a şüpheli işlem bildiriminde bulunma yetkisi kimdedir?",
+      prompt: "Uyum görevlisi atamak zorunda olan bir yükümlüde, olağan görev düzeninde MASAK'a ŞİB yetkisi kimdedir?",
       options: [
         "Münhasıran uyum görevlisine aittir ve devredilemez.",
         "Yönetim Kurulu Başkanı'na aittir.",
@@ -2732,7 +2745,7 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
         "İç denetim birimine aittir.",
       ],
       answer: 0,
-      explanation: "MASAK'a şüpheli işlem bildiriminde bulunma yetkisi münhasıran uyum görevlisine aittir ve devredilemez.",
+      explanation: "Uyum görevlisi atanan yükümlüde olağan görev düzeninde dış ŞİB uyum görevlisi tarafından yapılır. Görevden geçici ayrılmada mevzuata uygun vekalet ayrı hükümdür. Uyum görevlisi atama zorunluluğu olmayan yükümlüler için bildirim usulü bu ifadeyle genellenmez.",
       trapNote: "Bu yetkinin yönetim kuruluna veya başka bir birime ait olduğu sanılması yanlıştır.",
     },
     {
@@ -2786,14 +2799,14 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
     {
       prompt: "Uyum görevlisi lisansının yenileme ve iptal süreleri için hangisi doğrudur?",
       options: [
-        "Her 3 yılda bir yenileme eğitimi gerekir; son sınav/yenileme eğitiminden itibaren 5 yıl geçerse lisans tamamen iptal olur.",
+        "Her 3 yılda bir yenileme eğitimi gerekir; son sınav/yenileme eğitiminden itibaren yenileme yapılmazsa askıya alınır; sınav/son eğitim bitişinden 5 yılda başvuru yapılmazsa iptal edilir.",
         "Lisans süresizdir, hiçbir yenileme gerekmez.",
         "Her yıl yeniden sınava girmek gerekir.",
         "1 yıl aksama halinde lisans iptal olur.",
       ],
       answer: 0,
-      explanation: "Lisans MASAK sicilinde izlenir ve her 3 yılda bir yenileme eğitimi gerekir; son sınav veya yenileme eğitiminden itibaren 5 yıl geçerse lisans tamamen iptal olur.",
-      trapNote: "Yenileme periyodu (3 yıl) ile tam iptal eşiği (5 yıl) karıştırılmamalıdır.",
+      explanation: "Lisans MASAK sicilinde izlenir ve her 3 yılda bir yenileme eğitimi gerekir; son sınav veya yenileme eğitiminden itibaren yenileme yapılmazsa askıya alınır; sınav/son eğitim bitişinden 5 yılda başvuru yapılmazsa iptal edilir.",
+      trapNote: "Üç yılda eğitim; süresinde tamamlanmazsa askı. Beş yıllık başvuru sınırı askıdan değil sınav/son eğitim bitişinden sayılır.",
     },
     {
       prompt: "Uyum görevlisi lisans sınavından muafiyet için hangisi doğrudur?",
@@ -2881,11 +2894,11 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       trapNote: "Tarih ve tebliğ numarası (Sıra No: 30) sınavda doğrudan sorulabilir.",
     },
     {
-      prompt: "Bir aday modül sınavlarından 48, 72 ve 70 puan alıyor. Bu adayın sınav sonucu için hangisi doğrudur?",
+      prompt: "Bir aday iki modülden 48 ve 84 puan alıyor. Bu adayın sınav sonucu için hangisi doğrudur?",
       options: [
         "Ortalaması 65'in altında kalmasa bile 48 puanla modül barajı olan 50'nin altında kaldığı için sınavı geçemez.",
         "Ortalama tek başına yeterlidir, adaya lisans verilir.",
-        "Sadece en yüksek puan (72) dikkate alınır, aday başarılı sayılır.",
+        "Sadece en yüksek puan (84) dikkate alınır, aday başarılı sayılır.",
         "48 puan alınan modül otomatik olarak 50'ye yuvarlanır.",
       ],
       answer: 0,
@@ -2908,9 +2921,9 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       trapNote: "Adli sonuç doğuran ihlalleri idari zannetmek klasik bir hatadır.",
     },
     {
-      prompt: "5549 sayılı Kanun md. 13/1 uyarınca temel maktu idari para cezaları için hangisi doğrudur?",
+      prompt: "5549 md. 13/1'de yazılı 30.000 ve 50.000 TL tutarlar nasıl okunmalıdır?",
       options: [
-        "Kimlik tespiti/devamlı bilgi verme ihlalinde 30.000 TL, ŞİB yapmama ihlalinde 50.000 TL (tutarlar her yıl yeniden değerleme oranında artırılır).",
+        "Kanundaki baz tutarlardır; ihlal yılına ait yeniden değerlenmiş tutarlar uygulanır, 2026 cezası olarak aynen kullanılamaz.",
         "Her iki ihlal türü için de aynı tutar (40.000 TL) uygulanır.",
         "Tutarlar sabittir, hiçbir zaman güncellenmez.",
         "Kimlik tespiti ihlalinde 50.000 TL, ŞİB yapmama ihlalinde 30.000 TL uygulanır.",
@@ -2920,31 +2933,31 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       trapNote: "30.000 TL ve 50.000 TL rakamlarının hangi ihlale karşılık geldiği ters çevrilerek sorulur.",
     },
     {
-      prompt: "Finansal kuruluşlarda (banka, ödeme kuruluşu, aracı kurum vb.) idari para cezası nasıl hesaplanır?",
+      prompt: "5549 md. 13/1 kapsamındaki finansal kuruluş cezasında yüzde beş alt sınırı nasıl uygulanır?",
       options: [
-        "Sabit tutarın basitçe 2 katı değil; işlem tutarının yüzde beşinden az olmamak üzere iki kat oranında hesaplanır.",
+        "Yeniden değerlenmiş maktu cezanın iki katı ile işlem tutarının yüzde beşinden yüksek olan tutar alınır.",
         "Sabit tutarın (30.000/50.000 TL) tam olarak 2 katı uygulanır.",
         "İşlem tutarından bağımsız, sabit 100.000 TL uygulanır.",
         "Finansal kuruluşlar için ayrı bir hesaplama yoktur, diğer yükümlülerle aynıdır.",
       ],
       answer: 0,
-      explanation: "Finansal kuruluşlar için ceza, işlem tutarının yüzde beşinden az olmamak üzere iki kat oranında hesaplanan ayrı bir mekanizmadır; sabit tutarın basit katı değildir.",
-      trapNote: "'Sabit tutarın 2 katı' basitleştirmesi yanlıştır; hesaplama işlem tutarına bağlıdır.",
+      explanation: "İki kat uygulanacak olan maktu cezadır; işlem tutarının yüzde beşi sonucun alt sınırıdır. Yüzde beşi hesaplayıp onu yeniden ikiyle çarpmak yanlıştır; yıllık tavan ayrıca kontrol edilir.",
+      trapNote: "Ceza = max(2 × yeniden değerlenmiş maktu ceza, işlem tutarı × %5); %5 × 2 değildir.",
     },
     {
-      prompt: "İdari para cezasının yıllık üst sınırı için hangisi doğrudur?",
+      prompt: "5549 md. 13/5'teki yıllık ceza tavanlarının kapsamı için hangisi doğrudur?",
       options: [
-        "İki kat ceza uygulanan finansal kuruluşlar için 40.000.000 TL, diğer yükümlüler için 4.000.000 TL'dir.",
+        "40 milyon / 4 milyon TL kanuni baz tavanlar yeniden değerlenir; sınır her bir yükümlülük ve ihlal yılı için uygulanır.",
         "Tüm yükümlüler için tek bir tavan (10.000.000 TL) uygulanır.",
         "Yıllık tavan uygulanmaz, ceza sınırsız birikebilir.",
         "Finansal kuruluşlar için 4.000.000 TL, diğerleri için 40.000.000 TL'dir.",
       ],
       answer: 0,
-      explanation: "Yıllık ceza üst sınırı iki kademelidir: iki kat ceza uygulanan finansal kuruluşlar için 40.000.000 TL, diğer yükümlüler için 4.000.000 TL'dir.",
+      explanation: "Kanundaki 40 milyon ve 4 milyon TL, güncel yıl tutarları değil yeniden değerlemeye tabi baz tavanlardır. Md. 13/5 her bir yükümlülük ve ihlal yılı için sınır koyar; üst tutardan ceza sonrası takip eden yıl aynı neviden ihlalde hadler iki kat uygulanır.",
       trapNote: "İki tavan rakamının hangi yükümlü grubuna ait olduğu ters çevrilerek sorulur.",
     },
     {
-      prompt: "Yönetim kurulu üyesi veya sorumlu üst düzey yöneticiye uygulanabilecek ayrı idari para cezası oranı nedir?",
+      prompt: "5549 md. 13/2-3 kapsamındaki uyum ihlalinde, ihtar ve süre koşulları sağlandığında sorumlu yöneticiye uygulanacak ceza oranı nedir?",
       options: [
         "Yükümlüye kesilen cezanın dörtte biri (1/4)",
         "Yükümlüye kesilen cezanın yarısı (1/2)",
@@ -2952,7 +2965,7 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
         "Yöneticiye ayrıca ceza uygulanmaz.",
       ],
       answer: 0,
-      explanation: "Yönetim kurulu üyesine veya sorumlu üst düzey yöneticiye, yükümlüye kesilen idari para cezasının dörtte biri (1/4) oranında ayrıca ceza uygulanabilir.",
+      explanation: "Dörtte bir oran, 5549 md. 13/2-3 kapsamındaki uyum yükümlülüğü ihlali için ve ihtar/süre koşullarıyla uygulanır; bütün idari cezaların ortak kuralı değildir.",
       trapNote: "Oranın 1/4 olduğu, 1/2 ile karıştırılmamalıdır.",
     },
     {
@@ -2982,13 +2995,13 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
     {
       prompt: "Bir bankada kimlik tespiti yapılmadığı tespit ediliyor; ayrı bir olayda banka çalışanı ŞİB yapıldığını müşteriye söylüyor. Bu iki ihlal için hangisi doğrudur?",
       options: [
-        "Kimlik tespiti ihlali idari para cezası (işlem tutarının en az %5'i, iki kat) gerektirirken; ŞİB'in müşteriye açıklanması adli bir suçtur ve 1-3 yıl hapis riski doğurur.",
+        "Kimlik tespiti ihlali idari cezadır; ŞİB'in müşteriye ifşası md. 14 kapsamında 1-3 yıl hapis ve 5.000 güne kadar adli para cezası riski doğurur.",
         "İki ihlal de aynı şekilde sadece idari para cezasına tabidir.",
         "İki ihlal de sadece adli suç oluşturur, idari ceza uygulanmaz.",
         "Kimlik tespiti ihlali adli suçtur, ŞİB'in açıklanması ise sadece idari para cezası gerektirir.",
       ],
       answer: 0,
-      explanation: "Banka finansal kuruluş olduğu için kimlik tespiti ihlalinde ceza işlem tutarının en az %5'i esas alınarak iki kat oranında hesaplanır (idari); ŞİB yapıldığının müşteriye söylenmesi ise idari değil adli bir suç olup 1-3 yıl hapis riskini doğurur.",
+      explanation: "Kimlik tespiti ihlalinde finansal kuruluş hesabı: max(2 × güncellenmiş maktu ceza, işlem tutarı × %5). ŞİB gizliliğini ihlal ise idari değil md. 14 kapsamında adli suçtur.",
       trapNote: "İki ihlal türünün (idari/adli) birbirine karıştırılması sınavın klasik tuzağıdır.",
       difficulty: "Sınav",
     },
@@ -2997,17 +3010,17 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
     {
       prompt: "Uzaktan Kimlik Tespiti'nin (UKT) hukuki dayanağı ve kapsamı için hangisi doğrudur?",
       options: [
-        "Hem sektörel mevzuatın (BDDK/SPK vb.) izni hem de MASAK'ın 19 No'lu Genel Tebliği'ndeki usul birlikte aranır; mevcut çerçeve sadece gerçek kişiler içindir.",
+        "Hem sektörel mevzuatın (BDDK/SPK vb.) izni hem de MASAK'ın 19 No'lu Genel Tebliği'ndeki usul birlikte aranır; gerçek kişiler ile ticaret siciline kayıtlı tüzel kişiler, ilgili sektörel ve temsil doğrulama şartlarıyla kapsamdadır.",
         "Sadece MASAK'ın izni yeterlidir, sektörel mevzuata gerek yoktur.",
         "UKT hem gerçek hem tüzel kişiler için aynı şekilde uygulanır.",
         "UKT'nin herhangi bir tebliğ dayanağı yoktur, sadece teamülle uygulanır.",
       ],
       answer: 0,
-      explanation: "UKT için hem sektörel mevzuatın izni hem de MASAK 19 No'lu Genel Tebliği'ndeki düzenleme birlikte bulunmalıdır; mevcut çerçeve sadece gerçek kişiler içindir.",
-      trapNote: "UKT'nin tüzel kişiler için de doğrudan uygulanabileceği yanılgısı yaygındır.",
+      explanation: "UKT için hem sektörel mevzuatın izni hem de MASAK 19 No'lu Genel Tebliği'ndeki düzenleme birlikte bulunmalıdır; gerçek kişiler ile ticaret siciline kayıtlı tüzel kişiler, ilgili sektörel ve temsil doğrulama şartlarıyla kapsamdadır.",
+      trapNote: "Ticaret siciline kayıtlı tüzel kişiler kapsamda olabilir; temsilci kimliği ve temsil yetkisi ayrıca doğrulanır.",
     },
     {
-      prompt: "Yeni nesil kimlik kartındaki çip NFC ile doğrulanamıyorsa hangi kural uygulanır?",
+      prompt: "Görsel doğrulamaya izin verilen kimlik kartı usulünde NFC yapılamıyorsa hangi ek kontrol gerekir?",
       options: [
         "Hologram, mikro yazı ve kinegram gibi en az dört farklı güvenlik öğesinin görüntülü görüşmede teyit edilmesi gerekir.",
         "Sadece sözlü beyan yeterlidir.",
@@ -3016,18 +3029,18 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       ],
       answer: 0,
       explanation: "NFC mümkün değilse hologram, mikro yazı ve kinegram gibi en az dört farklı güvenlik öğesinin görüntülü görüşmede teyit edilmesi gerekir.",
-      trapNote: "Sözlü beyan veya fotokopinin tek başına yeterli olduğu sanılması yanlıştır.",
+      trapNote: "Bu kimlik kartı alternatifi, yabancı pasaportta Tebliğ 32'nin zorunlu NFC koşulunun yerine geçirilemez.",
     },
     {
-      prompt: "UKT ile açılan hesapta ilk finansal hareket kuralı nedir?",
+      prompt: "Yalnız görsel güvenlik unsurlarıyla uzaktan kimlik doğrulamada ilk finansal hareket için hangi ek güvence aranır?",
       options: [
-        "İlk finansal hareketin, müşterinin daha önce yüz yüze kimlik tespiti yapılmış bir banka hesabından gelmesi şarttır.",
+        "İlk finansal hareketin, müşteri tanıma esaslarının uygulandığı başka bir finansal kuruluş üzerinden yapılması gerekir.",
         "İlk finansal hareket herhangi bir hesaptan gelebilir, kısıtlama yoktur.",
         "İlk finansal hareket mutlaka nakit olarak yapılmalıdır.",
         "İlk finansal hareket sınırı yalnızca yabancı uyruklular için geçerlidir.",
       ],
       answer: 0,
-      explanation: "UKT ile açılan hesapta ilk finansal hareketin, müşterinin daha önce yüz yüze kimlik tespiti yapılmış bir banka hesabından gelmesi şarttır.",
+      explanation: "NFC yerine yalnız görsel güvenlik unsurlarıyla doğrulamada ilk finansal hareket, müşterinin tanınması esaslarının uygulandığı başka bir finansal kuruluş üzerinden yapılır. KVHS için para yatırma/çekme ayrıca müşterinin kimliğiyle uyumlu banka veya kredi kartı hesabından yapılır; bu kurallar tüm uzaktan hesaplara tek biçimde genellenmez.",
       trapNote: "Bu kural, yükümlülerin uzaktan açılan hesapları bilinmeyen kaynaklardan gelen ilk parayla 'temizlemesini' önler.",
     },
     {
@@ -3100,7 +3113,7 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
       trapNote: "Tüm belge türlerinin aynı tarihten başladığı sanılması yaygın bir hatadır.",
     },
     {
-      prompt: "Elektronik tebligat ne zaman yapılmış sayılır?",
+      prompt: "5549 md. 9/A kapsamındaki MASAK elektronik tebligatı ne zaman yapılmış sayılır?",
       options: [
         "Belge, muhatabın elektronik adresine ulaştığı anda tebliğ edilmiş sayılır; genel idari usuldeki '5 gün sonra tebliğ' kuralı burada uygulanmaz.",
         "Gönderimden 5 gün sonra tebliğ edilmiş sayılır.",
@@ -3432,8 +3445,42 @@ const authoredQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
   ],
 };
 
+const amendmentQuestionsByLessonId: Record<string, AuthoredQuestion[]> = {
+  "musterinin-taninmasi": [
+    {
+      prompt: "7 Ekim 2026 sonrası, sürekli iş ilişkisi veya şüphe bulunmayan genel işlemlerde bağlantılı 200.000 ve 190.000 TL iki işlem için hangisi doğrudur?",
+      options: ["Toplam 390.000 TL, 370.000 TL eşiğini aştığından kimlik tespiti gerekir.", "Her işlem ayrı ayrı 370.000 TL altında olduğundan kimlik tespiti gerekmez.", "Bu tutar otomatik ŞİB sınırıdır.", "Yalnız nakit işlemlerde toplam dikkate alınır."],
+      answer: 0,
+      explanation: "Tedbirler Yönetmeliği md. 5/1-b bağlantılı işlemlerin toplamını esas alır. 11845 sayılı Kararla genel eşik 370.000 TL olmuştur. Eşiğin aşılması otomatik ŞİB anlamına gelmez; ŞİB şüpheye bağlıdır ve tutar sınırı yoktur.",
+      trapNote: "İşlemi parçalamak, bağlantılı toplamın dikkate alınmasını engellemez.",
+      difficulty: "Sınav",
+    },
+    {
+      prompt: "11845 sayılı Kararla md. 16'ya eklenen SMS OTP kolaylığı hangi duruma ilişkindir?",
+      options: ["Önceden kimliği tespit edilmiş müşterinin sonraki işleminde, uygun güvenlik ve risk koşullarıyla imza örneği alınmayabilir.", "Her yeni müşteriye SMS gönderilmesi ilk kimlik tespitinin yerine geçer.", "Bütün imza ve kimlik yükümlülükleri koşulsuz kaldırılmıştır.", "Yalnız yüksek riskli, kimliği bilinmeyen kişiler kabul edilir."],
+      answer: 0,
+      explanation: "Mevcut müşterinin doğrulanmış/kayıtlı telefonu veya internet/mobil kanal üzerinden doğrulanması, işlemin riskine uygun güvencelerle imza örneği almama imkanı sağlar. İlk kimlik tespitinden muafiyet değildir.",
+      trapNote: "Mevcut müşterinin sonraki işlemindeki imza kolaylığı ile yeni müşteri kabulü farklıdır.",
+    },
+  ],
+  "fintek-riskleri": [{
+    prompt: "7 Ekim 2026 sonrası 20.000 TL kripto transfer mesajında, md. 24/A açısından hangi bilgiler gerekir?",
+    options: ["Gönderen ve alıcının ad/unvan ve cüzdan/referans bilgileri; bu mesaj bilgilerinin teyidi eşik altında zorunlu değildir.", "Hiçbir taraf bilgisi iletilmez.", "Yalnız alıcının adı yeterlidir.", "Gönderen ve alıcının bütün bilgilerinin mutlaka aynı şekilde teyidi gerekir."],
+    answer: 0,
+    explanation: "30.000 TL altındaki mesajlar da taraf bilgisi içerir. Eşik altındaki mesaj bilgisinin teyidinin zorunlu olmaması, sürekli iş ilişkisi veya şüphe nedeniyle doğan tutardan bağımsız KYC yükümlülüğünü kaldırmaz.",
+    trapNote: "Bilgi alma/iletme ile doğruluğu teyit etme ayrı yükümlülüklerdir.",
+  }],
+  "denetim-idari-ceza": [{
+    prompt: "7 Ekim 2026 değişikliğiyle md. 38/3'te getirilen tek rapor kuralının kapsamı nedir?",
+    options: ["Finansal kuruluş tanımı dışında kalan yükümlüler için uyum denetimi raporu; ihlal varsa aynı rapor ihlal inceleme raporu yerine de geçer.", "Bütün bankalarda hiçbir denetim raporu hazırlanmaz.", "Bütün yükümlüler için ihlal incelemesi kaldırılmıştır.", "İhlalin rapora yazılması artık yasaktır."],
+    answer: 0,
+    explanation: "İstisna, Yönetmeliğin 3/1-f bendindeki finansal kuruluşlar dışında kalan yükümlülere ilişkindir. İhlal denetim raporunda gösterilir; tek rapor kuralı ihlalin değerlendirilmesini ortadan kaldırmaz.",
+    trapNote: "Finansal kuruluşlar ile bunların dışında kalan yükümlüler ayrı okunmalıdır.",
+  }],
+};
+
 export const questions: Question[] = lessons.flatMap((lesson) => {
-  const authored = authoredQuestionsByLessonId[lesson.id] ?? [];
+  const authored = [...(authoredQuestionsByLessonId[lesson.id] ?? []), ...(amendmentQuestionsByLessonId[lesson.id] ?? [])];
   return authored.map((item, index) => {
     const fallbackDifficulty: Difficulty = index % 5 === 0 ? "Sınav" : index % 2 === 0 ? "Orta" : "Temel";
     return {
@@ -3446,7 +3493,7 @@ export const questions: Question[] = lessons.flatMap((lesson) => {
       answer: item.answer,
       explanation: item.explanation,
       trapNote: item.trapNote,
-      sourceRef: lesson.sourceRef,
+      sourceRef: lessonContentById[lesson.id].legalAnchors.join("; ") + "; " + lessonContentById[lesson.id].sourceTrace,
     } satisfies Question;
   });
 });

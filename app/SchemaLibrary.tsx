@@ -28,7 +28,7 @@ export default function SchemaLibrary({ onStudy }: { onStudy: (id: string) => vo
   const moduleLessons = lessons.filter((lesson) => lesson.moduleId === moduleId);
   const lesson = moduleLessons.find((item) => item.id === selected) ?? moduleLessons[0];
   const content = lessonContentById[lesson.id];
-  const illustration = { ...illustrations[lesson.id], src: `${lesson.id}-detayli-sema.jpg` };
+  const illustration = { ...illustrations[lesson.id], src: lesson.id === "fintek-riskleri" ? "fintek-riskleri-detayli-sema-v2.jpg" : `${lesson.id}-detayli-sema.jpg` };
 
   return <section className="schema-library">
     <div className="schema-controls">
