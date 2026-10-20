@@ -1,4 +1,4 @@
-const CACHE_NAME = "masak-prep-v10";
+const CACHE_NAME = "masak-prep-v12";
 const CORE_ASSETS = ["./", "manifest.webmanifest", "app-icon.svg", "icon-192.png", "icon-512.png", "apple-touch-icon.png", "favicon.svg", "offline.html"];
 
 function fromScope(path) {
@@ -30,7 +30,9 @@ self.addEventListener("fetch", (event) => {
     fetch(event.request)
       .then((response) => {
         const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        if (response.ok && response.status === 200) {
+          event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy)).catch(() => undefined));
+        }
         return response;
       })
       .catch(() => caches.match(event.request).then((cached) => cached || caches.match(fromScope("offline.html")))),

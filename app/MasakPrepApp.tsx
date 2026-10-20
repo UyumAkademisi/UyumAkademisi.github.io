@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
+import { ArrowLeft, CalendarDays, FileText } from "lucide-react";
 import {
   academicLessonById,
   examRules,
@@ -19,8 +20,13 @@ import AnnotatedReading from "./AnnotatedReading";
 import StorageNotice from "./StorageNotice";
 import SchemaLibrary from "./SchemaLibrary";
 import { accountStorageKey } from "./account-storage";
+import StudyPlan from "./StudyPlan";
+import PdfFallback from "./PdfFallback";
+import { PLAN_STORAGE_KEY } from "./study-plan";
 
-type ViewId = "study" | "exam" | "schemas" | "progress";
+const PdfReader = lazy(() => import("./PdfReader").catch(() => ({ default: PdfFallback })));
+
+type ViewId = "study" | "exam" | "schemas" | "progress" | "plan" | "source";
 type ExamMode = ModuleId | "mixed";
 type AnswerMap = Record<string, number>;
 type StudyPhase = "lesson" | "questions" | "done";
@@ -70,6 +76,8 @@ const navItems: { id: ViewId; label: string; icon: string }[] = [
 ];
 
 const viewCopy: Record<ViewId, { eyebrow: string; title: string; subtitle: string }> = {
+  plan: { eyebrow: "Beş Haftalık Hazırlık", title: "Ders planı", subtitle: "Her gün 45 dakika" },
+  source: { eyebrow: "Ana Ders Kaynağı", title: "Kaynak okuyucu", subtitle: "SPL · MASAK çalışma notları" },
   study: {
     eyebrow: "Adım Adım Çalışma",
     title: "Çalış",
@@ -240,11 +248,18 @@ export default function MasakPrepApp() {
   const [theme, setTheme] = useState<ThemeMode>("light");
   const [hydrated, setHydrated] = useState(false);
   const [resetMessage, setResetMessage] = useState("");
+  const [sourcePage, setSourcePage] = useState<number | undefined>(undefined);
+
+  function openSource(lessonId?: string) {
+    setSourcePage(lessonId ? academicLessonById[lessonId]?.lecture[0].pdfRange[0] : undefined);
+    setActiveView("source");
+    window.scrollTo(0, 0);
+  }
 
   function resetProgress() {
-    if (!window.confirm("Tamamlanan dersler, soru sonuçları, deneme geçmişi, okuma konumları ve kişisel notlar silinecek. Bu işlem geri alınamaz. İlerlemeyi sıfırlamak istiyor musun?")) return;
+    if (!window.confirm("Tamamlanan dersler, ders planı, soru sonuçları, deneme geçmişi, PDF ve ders okuma konumları ile kişisel notlar silinecek. Bu işlem geri alınamaz. İlerlemeyi sıfırlamak istiyor musun?")) return;
     try {
-      const keys = ["masak-prep-progress-v1", "masak-prep-progress-v2", "masak-prep-srs-v1", "masak-prep-recall-v1", "masak-prep-tour-cursor-v1", "masak-academic-recall-v1"];
+      const keys = ["masak-prep-progress-v1", "masak-prep-progress-v2", "masak-prep-srs-v1", "masak-prep-recall-v1", "masak-prep-tour-cursor-v1", "masak-academic-recall-v1", PLAN_STORAGE_KEY, "uyum-guide-page-v1"];
       const readingKeys = lessons.flatMap((lesson) => [`masak-reading-position:${lesson.id}`, `masak-reading-notes:${lesson.id}`]);
       [...keys, ...readingKeys].forEach((key) => window.localStorage.removeItem(accountStorageKey(key)));
       window.localStorage.setItem(accountStorageKey("masak-prep-progress-v2"), JSON.stringify(defaultProgress));
@@ -664,8 +679,8 @@ export default function MasakPrepApp() {
         <nav className="topnav-links" aria-label="Ana gezinme">
           {navItems.map((item) => (
             <button
-              aria-current={activeView === item.id ? "page" : undefined}
-              className={activeView === item.id ? "active" : ""}
+              aria-current={activeView === item.id || (item.id === "study" && (activeView === "plan" || activeView === "source")) ? "page" : undefined}
+              className={activeView === item.id || (item.id === "study" && (activeView === "plan" || activeView === "source")) ? "active" : ""}
               key={item.id}
               onClick={() => setActiveView(item.id)}
               type="button"
@@ -690,13 +705,21 @@ export default function MasakPrepApp() {
       </header>
 
       <main className="main">
-        <header className="topbar">
+        {activeView !== "source" && <header className="topbar">
           <div>
             <p className="eyebrow">{activeCopy.eyebrow}</p>
             <h1 className="page-title screen-title">{activeCopy.title}</h1>
             <p className="screen-subtitle">{activeCopy.subtitle}</p>
           </div>
-        </header>
+        </header>}
+
+        {(activeView === "study" || activeView === "plan" || activeView === "source") && <div className="study-tools">
+          {activeView !== "study" && <button type="button" className="button ghost" onClick={() => setActiveView("study")}><ArrowLeft size={17} /> Derse dön</button>}
+          {activeView !== "plan" && <button type="button" className="button ghost" onClick={() => { setActiveView("plan"); window.scrollTo(0, 0); }}><CalendarDays size={17} /> Ders planı</button>}
+          {activeView !== "source" && <button type="button" className="button ghost" onClick={() => openSource()}><FileText size={17} /> Ana kaynak PDF</button>}
+        </div>}
+        {activeView === "plan" && <StudyPlan onStudy={id => { goToLesson(id); setActiveView("study"); window.scrollTo(0, 0); }} onSource={openSource} onExam={startExam} />}
+        {activeView === "source" && <Suspense fallback={<p role="status">Kaynak okuyucu açılıyor…</p>}><PdfReader initialPage={sourcePage} /></Suspense>}
 
         {activeView === "study" && (
           <section className="study-shell">
@@ -741,6 +764,7 @@ export default function MasakPrepApp() {
                 <h2 className="page-title study-title">{studyLesson.title}</h2>
                 <p className="study-lead">{studyContent.overview}</p>
                 <p className="hint-text">{studyLesson.officialQuestionCount} soru · {studyContent.estimatedMinutes} dk okuma</p>
+                <button type="button" className="button ghost lesson-source-button" onClick={() => openSource(studyLesson.id)}><FileText size={17} /> Bu konuyu ana kaynakta oku</button>
                 <section className="callout focus-callout exam-priority">
                   <h3>Sınavda Çıkar</h3>
                   <p>{studyContent.examFocus}</p>

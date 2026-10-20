@@ -127,6 +127,61 @@ html[data-theme="dark"],
   --font-mono: var(--font-geist-mono);
 }
 
+.study-tools, .plan-actions { display:flex; flex-wrap:wrap; align-items:center; gap:0.6rem; }
+.study-tools { margin:0 0 1rem; }
+.study-tools .button, .plan-actions .button, .lesson-source-button { display:inline-flex; align-items:center; justify-content:center; gap:0.45rem; }
+.lesson-source-button { margin:0.6rem 0 1rem; }
+.study-plan { max-width:1000px; margin-inline:auto; }
+.plan-summary { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; padding-block:0.6rem 1.2rem; }
+.plan-summary h2, .pdf-heading h1 { margin:0; font-size:1.25rem; }
+.plan-summary p { margin:0.4rem 0 0; color:var(--muted); }
+.plan-summary progress { appearance:none; width:180px; height:8px; border:0; border-radius:4px; overflow:hidden; background:var(--line); accent-color:var(--accent); }
+.plan-summary progress::-webkit-progress-bar { background:var(--line); }
+.plan-summary progress::-webkit-progress-value { background:var(--accent); }
+.plan-summary progress::-moz-progress-bar { background:var(--accent); }
+.plan-next { border-left:4px solid var(--accent); padding:1rem 1.2rem; margin-bottom:1.5rem; background:var(--accent-soft); }
+.plan-next h3 { font-size:1.15rem; margin:0.5rem 0; }
+.plan-next p { line-height:1.65; }
+.plan-week { border-top:1px solid var(--line); }
+.plan-week > summary { cursor:pointer; padding:1.1rem 0; font-weight:700; }
+.plan-week > summary span { float:right; font-size:0.8rem; font-weight:400; color:var(--muted); }
+.plan-day { padding:1.1rem 0 1.4rem; border-top:1px solid var(--line); }
+.plan-day-heading { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:0.7rem; }
+.plan-day h3 { margin:0; font-size:1rem; line-height:1.6; }
+.plan-day h3 span { color:var(--accent-strong); margin-right:0.4rem; }
+.plan-day-heading label { display:flex; align-items:center; gap:0.4rem; font-size:0.8rem; min-height:44px; cursor:pointer; }
+.plan-day-heading input { width:19px; height:19px; accent-color:var(--accent); }
+.plan-day > p { color:var(--muted); line-height:1.7; margin:0.6rem 0; }
+.plan-blocks { display:flex; flex-wrap:wrap; list-style:none; gap:0.4rem 1rem; padding:0; margin:0.75rem 0 1rem; font-size:0.8rem; }
+.plan-blocks strong { color:var(--accent-strong); margin-right:0.3rem; }
+.plan-day.is-complete h3 { color:var(--muted); }
+.pdf-reader { max-width:1150px; margin-inline:auto; min-width:0; }
+.pdf-heading { margin-bottom:1rem; }
+.pdf-heading p { margin:0.45rem 0; }
+.pdf-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:0.4rem; padding:0.6rem 0; border-block:1px solid var(--line); }
+.reader-icon { display:inline-flex; align-items:center; justify-content:center; flex:0 0 44px; width:44px; height:44px; color:var(--foreground); background:var(--panel); border:1px solid var(--line); border-radius:6px; cursor:pointer; }
+.reader-icon:disabled { opacity:0.4; cursor:default; }
+.reader-icon:hover:not(:disabled) { background:var(--accent-soft); }
+.pdf-toolbar form, .pdf-toolbar label, .pdf-zoom { display:flex; align-items:center; gap:0.4rem; font-size:0.85rem; }
+.pdf-toolbar input { width:4.3rem; height:44px; padding:0.4rem; border:1px solid var(--line); border-radius:4px; background:var(--panel); color:var(--foreground); }
+.pdf-zoom { margin-left:auto; }
+.pdf-zoom output { min-width:3rem; text-align:center; }
+.pdf-topic { display:flex; flex-wrap:wrap; align-items:center; gap:0.75rem; margin:1rem 0; font-size:0.85rem; }
+.pdf-topic select { min-width:0; width:min(100%, 530px); max-width:100%; padding:0.6rem; background:var(--panel); color:var(--foreground); border:1px solid var(--line); border-radius:4px; }
+.pdf-surface { overflow:auto; max-width:100%; min-height:200px; background:var(--panel-soft); padding:12px; }
+.pdf-surface canvas { display:block; margin:0 auto; background:white; }
+.pdf-surface canvas[hidden] { display:none; }
+.pdf-text { margin:1rem 0; border-top:1px solid var(--line); padding-top:1rem; }
+.pdf-text summary { cursor:pointer; }
+.pdf-text p { white-space:pre-wrap; line-height:1.8; overflow-wrap:anywhere; }
+.pdf-native { display:block; width:100%; height:75dvh; min-height:400px; border:1px solid var(--line); background:white; margin-top:1rem; }
+@media(max-width:520px) {
+  .pdf-zoom { margin-left:0; }
+  .pdf-toolbar { gap:0.25rem; }
+  .plan-day-heading { align-items:flex-start; }
+  .study-tools .button, .plan-actions .button { min-height:44px; font-size:0.85rem; }
+}
+
 * {
   box-sizing: border-box;
 }

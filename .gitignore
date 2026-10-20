@@ -42,3 +42,7 @@ tsconfig.tsbuildinfo
 /.wrangler/
 /outputs/
 /work/
+
+# Official source is downloaded and checksum-verified before the Pages build.
+/public/masak-rehber-temmuz-2026.pdf
+/public/masak-rehber-temmuz-2026.pdf.download
