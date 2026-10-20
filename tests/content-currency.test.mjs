@@ -71,6 +71,32 @@ test("Source records and paragraph bodies stay consistent after amendments", () 
   assert.ok(academicLessonById["islem-ertelemesi"].sources.some(s=>s.title.includes("Tebliğ 34")));
 });
 
+test("Expanded exam lessons preserve note anchors and have sourced substantive additions", () => {
+  const baseline = JSON.parse(readFileSync(new URL("../app/academic-content.json", import.meta.url), "utf8"));
+  const expansions = JSON.parse(readFileSync(new URL("../app/lesson-expansions.json", import.meta.url), "utf8"));
+  for (const [id, expansion] of Object.entries(expansions)) {
+    const chapter = academicLessonById[id];
+    assert.ok(chapter, id);
+    assert.equal(chapter.lecture.length, baseline[id].lecture.length);
+    assert.ok(chapter.wordCount > baseline[id].wordCount + 800, id);
+    assert.equal(chapter.wordCount, chapter.lecture.reduce((sum, s) => sum + s.body.trim().split(/\s+/u).length, 0));
+    assert.ok(expansion.sections.length >= 6);
+    for (const addition of expansion.sections) {
+      assert.ok(chapter.lecture.some(s => s.title === addition.title), addition.title);
+      assert.ok(addition.sourceTrace);
+      assert.ok(addition.paragraphs.length >= 2);
+      assert.ok(addition.paragraphs.every(p => p.length > 180));
+    }
+    baseline[id].lecture.forEach((section, index) => {
+      assert.equal(chapter.lecture[index].title, section.title);
+      section.paragraphs.forEach((paragraph, p) => assert.equal(chapter.lecture[index].paragraphs[p], paragraph));
+    });
+    for (const source of expansion.sources) assert.ok(chapter.sources.some(s => s.url === source.url));
+  }
+  assert.match(academicLessonById["musterinin-taninmasi"].lecture.map(s => s.body).join("\n"), /yüzde 30|yüzde 60/);
+  assert.match(academicLessonById.sib.lecture.map(s => s.body).join("\n"), /Yalnız sözlü bildirim/);
+});
+
 test("Actual exam picker respects each SPL topic quota and returns 50 unique questions", () => {
   const app = readFileSync(new URL("../app/MasakPrepApp.tsx", import.meta.url), "utf8");
   const ast = ts.createSourceFile("app.tsx", app, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);

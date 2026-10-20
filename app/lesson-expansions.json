@@ -1,0 +1,204 @@
+{
+  "musterinin-taninmasi": {
+    "sources": [
+      {
+        "title": "MASAK: üçüncü tarafa güven ve kimlik tespiti açıklamaları",
+        "url": "https://masak.hmb.gov.tr/sikca-sorulan-sorular",
+        "status": "20 Ekim 2026: konu açıklamaları; tarihsel parasal tutarlar güncel eşik yerine kullanılmaz"
+      },
+      {
+        "title": "Kamusal Nüfuz Sahibi Kişilere Yönelik Uygulama Rehberi",
+        "url": "https://ms.hmb.gov.tr/uploads/sites/12/2022/11/Kamusal-Nufuz-Sahibi-Kislere-Yonelik-Uygulama-Rehberi.pdf",
+        "status": "Kasım 2022 rehberi; Tebliğ 21 kapsamındaki kavramlar ve tedbir ayrımları"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Kimlik tespiti ve müşteri tanımanın kapsamı",
+        "sourceTrace": "5549 sayılı Kanun md. 3; Tedbirler Yönetmeliği md. 5-19; özgün ders açıklaması",
+        "paragraphs": [
+          "Kimlik tespitinde iki işlem birbirinden ayrılır: gerekli bilgilerin elde edilmesi ve mevzuatın teyidini istediği bilgilerin uygun kaynakla doğrulanması. Müşterinin bir formu doldurması bilgi edinme aşamasıdır; formun doldurulmuş olması bütün teyit şartlarının yerine getirildiğini göstermez. Buna karşılık her bilginin mutlaka aynı belgeyle doğrulanacağı da söylenemez. İsim, temsil yetkisi, adres ve faaliyet bilgisi farklı düzenlemelere tabidir. Bir sınav sorusunda önce alınması gereken bilgi, ardından o bilgi için aranan belge veya yöntem belirlenmelidir.",
+          "Müşterinin tanınması ise kimlik belgesinden daha geniştir. Kimlik, kişinin kim olduğunu; iş ilişkisinin amacı, kuruluşun hangi hizmet için kullanılacağını; fon kaynağı ve beklenen işlem profili ise hareketlerin ekonomik açıklamasını anlamaya yarar. Geçerli kimlik belgesine sahip bir kişinin hesabını başkasının kullandığına ilişkin belirtiler bulunabilir. Belgenin geçerliliği, hesabın kullanımındaki tutarsızlığı ortadan kaldırmaz. Bu nedenle kimlik dosyasının tamam olması ile müşterinin bütün işlemlerinin risksiz olması aynı sonuç değildir.",
+          "Çözümlü ayrım: Bir müşteri hesap açılışında kimliğini usulüne uygun doğrulatmış, sonrasında bildirdiği meslekle açıklanamayan işlemler yapmıştır. 'Kimlik tespiti tamamlandığı için başka inceleme gerekmez' seçeneği yanlıştır; sürekli izleme ayrı bir yükümlülüktür. 'Her olağandışı hareket kesin suçtur' seçeneği de yanlıştır; açıklama ve mevcut bilgiler birlikte değerlendirilir. Doğru yaklaşım, profil ile işlem arasındaki uyumsuzluğu araştırmak, risk tedbirlerini uygulamak ve oluşan şüpheyi ayrıca bildirim yönünden ele almaktır."
+        ]
+      },
+      {
+        "title": "Temsil ve başkası hesabına hareket",
+        "sourceTrace": "5549 sayılı Kanun md. 3 ve 15; Tedbirler Yönetmeliği md. 14 ve 17; özgün ders açıklaması",
+        "paragraphs": [
+          "Bir işlemin taraflarını belirlerken dört soruya ayrı cevap verilir: kuruluşun müşterisi kimdir, işlemi fiilen kim yapmaktadır, bu kişinin temsil yetkisi var mıdır ve ekonomik yarar kime aittir? Şirket hesabı açan müdür, müşteri şirketin kendisi değildir; şirket adına işlem yapan temsilcidir. Temsilcinin kimliği ve yetkisi incelenirken tüzel kişinin kimliği de kendi kurallarına göre belirlenir. Şirketi imzayla bağlayabilme yetkisi, o kişinin mutlaka şirketin gerçek faydalanıcısı olduğu anlamına gelmez.",
+          "Başkası hesabına hareket, görünürde kendi adına işlem yapan kişinin gerçekte başka bir kişinin hesabına hareket etmesini de kapsayan ayrı bir inceleme alanıdır. Müşterinin kendi adına ve hesabına hareket ettiğine ilişkin görünüm ile işlemin ekonomik gerçekliği her zaman örtüşmeyebilir. Bu nedenle temsil, başkası hesabına hareket ve gerçek faydalanıcı kavramları birbirine yakın olsa da eş anlamlı değildir. Temsil yetkisini gösteren belgenin bulunması, işlemin arkasındaki ekonomik yararlanıcıyı araştırma ihtiyacını kendiliğinden kaldırmaz.",
+          "Çözümlü ayrım: Şirket çalışanı, şirket hesabından ödeme emri verir; şirket ortakları arasında yer almaz. Çalışanın işlemi yapması onu tek başına gerçek faydalanıcı yapmaz. Önce kimliği ve işlem yetkisi, sonra şirketin ortaklık ve kontrol yapısı değerlendirilir. Sorudaki 'işlemi yapan', 'adına işlem yapılan' ve 'hesabına hareket edilen' ifadelerinin altı ayrı çizilirse, seçeneklerin farklı kişilere ilişkin bilgileri birbirine karıştırdığı daha kolay görülür."
+        ]
+      },
+      {
+        "title": "Gerçek faydalanıcı ve nihai kontrol",
+        "sourceTrace": "Tedbirler Yönetmeliği md. 17/A; MASAK gerçek faydalanıcı açıklamaları; hesap örneği özgündür",
+        "paragraphs": [
+          "Gerçek faydalanıcı incelemesinin amacı ortaklık şemasında yeni bir tüzel kişi adı bulup durmak değil, nihai yarar veya kontrolle ilişkili gerçek kişiye ulaşmaktır. Doğrudan ortaklıkta kişi müşteri şirkete kendisi ortaktır. Dolaylı ortaklıkta araya bir veya birden çok şirket girer. Her katmanda pay sahiplerinin incelenmesi, şirket unvanlarından gerçek kişilere doğru ilerleyen bir araştırma gerektirir. Sicil kaydı, ortaklar defteri veya güvenilir başka kaynaklar bu yapıyı anlamaya yarar; tek bir belgenin bulunması bütün kontrol ilişkilerinin açıklandığı anlamına gelmez.",
+          "Salt ekonomik pay hesabını göstermek için özgün bir örnek kurulabilir: Elif, A şirketinin yüzde 60'ına; A şirketi de müşteri B şirketinin yüzde 50'sine sahipse, bu zincirde Elif'in B üzerindeki dolaylı ekonomik payı yüzde 30'dur. Hesap 0,60 ile 0,50'nin çarpılmasına dayanır. Ancak bu işlem tek başına hukuki gerçek faydalanıcı tespitinin tamamı değildir. Başka ortaklık yolları, oy hakları, sözleşmeler ve fiilî kontrol de incelenmelidir. Matematiksel pay hesabı, mevzuattaki araştırma sırasını ve kontrol değerlendirmesini ikame etmez.",
+          "Ortaklık oranına ilişkin inceleme ile nihai kontrol araştırması birbirini tamamlar. Görünürde düşük paya sahip bir kişi başka araçlarla kararları yönlendirebilir; sicilde temsilci görünen kişi ise yalnız ücretli yönetici olabilir. Üst düzey yöneticinin gerçek faydalanıcı olarak kabul edilmesine ilişkin son aşama da araştırma yapmadan kullanılacak bir kolaylık değildir. Sınavda 'ortak bulunamadı, herhangi bir çalışan yazılır' ya da 'yalnız imza yetkilisi incelenir' biçimindeki seçenekler, araştırmanın amacını ve sırasını tersine çevirir."
+        ]
+      },
+      {
+        "title": "Üçüncü tarafa güven",
+        "sourceTrace": "Tedbirler Yönetmeliği md. 21; MASAK SSS 58, 59, 79 ve 104; özgün karşılaştırma",
+        "paragraphs": [
+          "Üçüncü tarafa güven, herhangi bir kişinin müşteri hakkında verdiği bilgiye dayanılması değildir. Düzenleme, finansal kuruluşların başka bir finansal kuruluşun müşteriyi tanıma bakımından aldığı belirli tedbirlerden koşulları içinde yararlanmasına ilişkindir. Kapsam; müşteri, müşteri adına hareket eden kişi ve gerçek faydalanıcının kimliğinin tespiti ile ilişkinin veya işlemin amacı hakkında bilgi elde edilmesi bakımından değerlendirilir. Müşterinin yalnızca 'başka bankada hesabım var' demesi bu mekanizmayı işletmez.",
+          "Uygulamanın bilgi ve belge yönleri ayrıdır. Kuruluş, ihtiyaç duyulan müşteri kimlik bilgilerini üçüncü taraftan derhal alabilmeli; teyit belgelerinin onaylı örneklerini talep ettiğinde derhal temin edebileceğinden de emin olmalıdır. Diğer kuruluşun müşteriyi tanıma ve kayıt saklama tedbirlerini alıp almadığı incelenmeden sadece ticari itibarı esas alınamaz. Yurt dışı ilişkisinde ayrıca ilgili ülke ve uygulanabilir sınırlamalar değerlendirilir. Sonuçta nihai sorumluluk, güvenerek işlem yapan kuruluşta kalır; kuruluşlar arasındaki sözleşme bu sorumluluğu ortadan kaldırmaz.",
+          "Destek hizmeti ile farkı özellikle önemlidir. Kurye, dış destek birimi veya kuruluş adına hareket eden yardımcı, kendi bağımsız müşteri ilişkisine dayanarak üçüncü taraf işlevi görmez; kuruluşun kimlik tespiti faaliyetinin yürütülmesine yardım eder. Acente ilişkisi de kendiliğinden üçüncü tarafa güven sayılmaz. Dolayısıyla soruda önce tarafların sıfatları belirlenmelidir: bağımsız finansal kuruluşlar arasındaki güven ilişkisi mi vardır, yoksa bir kuruluşun kendi adına gördürdüğü iş mi söz konusudur? 'İş dışarıda yapıldığı için sorumluluk da dışarıdadır' çıkarımı her iki durumda da yanlıştır."
+        ]
+      },
+      {
+        "title": "Riskli ülkeler ve kamusal nüfuz",
+        "sourceTrace": "Tedbirler Yönetmeliği md. 25 ve 26/A; MASAK Genel Tebliği 21; PEP Uygulama Rehberi B-C bölümleri",
+        "paragraphs": [
+          "Kamusal nüfuz sahibi kişi değerlendirmesinde ölçüt, önemli kamusal görevin niteliğidir; yalnız vatandaşlık veya ikamet adresi değildir. Yerli ve yabancı ayrımı da görevi tevdi eden ülkeyle ilişkilidir. Uluslararası kuruluşlarda görev yapan kişiler ayrıca ele alınır. Bu kişilerin aile bireyleri ve yakın ilişkileri, ilgili düzenleme kapsamında tedbir değerlendirmesine konu olabilir. Buna karşılık kamusal görev sahibi olmak, kişinin suç işlediği veya bütün işlemlerinin şüpheli olduğu anlamına gelmez; düzenleme önleyici risk yönetimine yöneliktir.",
+          "Fon kaynağı ile malvarlığının kaynağı aynı soru değildir. Belirli bir transferin hangi gelirden karşılandığı fon kaynağıyla; kişinin toplam servetini hangi ekonomik faaliyetlerle edindiği ise malvarlığının kaynağıyla ilgilidir. Örneğin satış bedelinin bir bankadan gelmesi paranın transfer kanalını açıklar, fakat satılan varlığın nasıl edinildiğini tek başına açıklamaz. Uygulanabilir tedbirler değerlendirilirken üst yönetim onayı, kaynağın araştırılması ve ilişkinin sıkı izlenmesi ayrı işlevler olarak ele alınmalıdır.",
+          "Görevden ayrılma da riskin aynı gün otomatik olarak yok olduğu sonucunu doğurmaz. Eski görevle bağlantılı etki ve ilişkiler bakımından ilgili düzenlemenin devam eden tedbirleri incelenir. Ülke riski bakımından ise FATF izleme durumu, ulusal risk değerlendirmesi ve bağlayıcı yaptırım kararı aynı şey değildir. Bir ülkenin izleme listesinde bulunması ile belirli bir kişi hakkında uygulanması gereken malvarlığı dondurma kararı farklı hukuki sonuçlar taşır. Sınavda liste adının yanında listenin amacı ve işlemi yapan kuruluşun somut yükümlülüğü de belirlenmelidir."
+        ]
+      },
+      {
+        "title": "Sıkılaştırılmış ve basitleştirilmiş tedbirler",
+        "sourceTrace": "Tedbirler Yönetmeliği md. 26 ve 26/A; MASAK Genel Tebliği 5; özgün ders açıklaması",
+        "paragraphs": [
+          "Risk temelli yaklaşım, kuruluşun istediği her yükümlülüğü azaltabilmesi değildir. Basitleştirme, mevzuatın izin verdiği müşteri veya ürün grubu ve koşullar bakımından uygulanır. Sıkılaştırma ise yüksek riskin yönetilmesi için ek bilgi, onay veya daha yoğun izleme gerektirebilir. Bu nedenle önce işlemin hangi hükmün kapsamına girdiği, sonra basitleştirmeye izin veren şartların bulunup bulunmadığı değerlendirilir. Sadece işlem tutarının küçük olması veya müşterinin uzun süredir tanınması bütün tedbirleri kaldıran genel bir istisna oluşturmaz.",
+          "Düşük risk değerlendirmesi ile şüphe de ayrı düzlemlerdedir. Genel olarak düşük riskli kabul edilen bir ürünün belirli kullanımında şüphe ortaya çıkabilir. Bu durumda geçmiş risk sınıfı, yeni bulgunun değerlendirilmesini engellemez. Aynı şekilde yüksek riskli müşteri sınıfı, her işlem için otomatik suç sonucu üretmez. Doğru çözüm, uygulanabilir zorunlu tedbirleri korumak, somut riske uygun ek tedbiri belirlemek ve şüpheli işlem bildirimi gerekip gerekmediğini ayrı incelemektir."
+        ]
+      }
+    ]
+  },
+  "sib": {
+    "sources": [
+      {
+        "title": "MASAK Genel Tebliği 13: ŞİB usul ve esasları",
+        "url": "https://masak.hmb.gov.tr/masak-genel-tebligi-sira-no-13/",
+        "status": "20 Ekim 2026: md. 4-13 üzerinden bildirim süreci ve süreler kontrol edildi"
+      },
+      {
+        "title": "5549 sayılı Kanun",
+        "url": "https://masak.hmb.gov.tr/5549-sayili-suc-gelirlerinin-aklanmasinin-onlenmesi-hakkinda-kanun-2/",
+        "status": "Md. 4: bildirim ve gizlilik; md. 10: yükümlülerin korunması"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Bildirim eşiği ve şüphenin niteliği",
+        "sourceTrace": "5549 sayılı Kanun md. 4; MASAK Genel Tebliği 13 md. 3-4 ve 8; özgün ders açıklaması",
+        "paragraphs": [
+          "ŞİB bakımından aranan değerlendirme, ceza yargılamasında mahkûmiyet için gereken ispatla karıştırılmamalıdır. Yükümlü, işlemin arkasındaki suçu bütün unsurlarıyla çözen soruşturma makamı değildir. Bununla birlikte bildirim, somut bağlantısı olmayan bir kanaatin yazılması da değildir. Müşterinin bilinen faaliyeti, işlem amacı, taraflar ve fon akışı arasındaki açıklanamayan uyumsuzluklar değerlendirilir. Yasal görünen bir kaynaktan gelen fonun yasa dışı amaçla kullanılması ihtimali de şüphe değerlendirmesinin dışında bırakılmaz.",
+          "Olağandışılık, yüksek risk ve şüphe üç ayrı kavramdır. Olağandışılık alışılmış işlem örüntüsünden sapmayı; yüksek risk daha yoğun tedbir ihtiyacını; şüphe ise bildirim yönünden incelenecek bilgi ve bulguyu ifade eder. Bunlar aynı olayda birlikte bulunabilir, fakat birbirine otomatik dönüşmez. Mevsimsel ticaret yapan bir işletmenin dönemsel tahsilat artışı açıklanabilir olabilir. Buna karşılık müşteri profiliyle bağdaşmayan, ekonomik gerekçesi ortaya konulamayan çok sayıda üçüncü kişi transferi farklı bir değerlendirme gerektirir.",
+          "Çözümlü ayrım: Soruda 'suçun kesin ispatı henüz yoktur' denmesi, tek başına bildirim yükümlülüğünü ortadan kaldırmaz. 'Tutar düşüktür' ifadesi de bildirimden muafiyet sağlamaz. Diğer yandan yalnız müşterinin belirli bir mesleğe veya ülkeye mensup olması kesin suç isnadı için yeterli değildir. Doğru seçenek; mevcut bilgi ve bulguları değerlendiren, gerektiğinde yetki ve imkân ölçüsünde araştırma yapan ve oluşan şüpheyi süresinde bildiren yaklaşımdır."
+        ]
+      },
+      {
+        "title": "Tutar ve teşebbüs edilen işlemler",
+        "sourceTrace": "MASAK Genel Tebliği 13 md. 4/2-5; özgün ders açıklaması",
+        "paragraphs": [
+          "Kimlik tespitinde belirli işlem türlerine göre parasal eşikler bulunması, aynı eşiklerin ŞİB için de geçerli olduğu anlamına gelmez. Şüpheli işlem bildirimi tutar sınırından bağımsız değerlendirilir. Tek tek küçük görünen hareketler ortak amaç, taraf veya zaman ilişkisi içinde anlamlı bir örüntü oluşturabilir. Bu nedenle değerlendirme tek satırlık işlem kaydında durmaz; bağlantılı hareketler birlikte ele alınabilir. Birden çok işlem birlikte şüphe oluşturduğunda bunların ilişkisinin bildirimde açıklanması gerekir.",
+          "İşlemin tamamlanmaması da kendiliğinden bildirim engeli değildir. Müşterinin işlem yapmak istemesi, bilgi talebinden sonra vazgeçmesi veya işleme izin verilmemesi hâlinde teşebbüsün içeriği ve mevcut bulgular değerlendirilir. Teşebbüs aşamasında kimlik tespiti mümkün olduğu ölçüde yerine getirilir. Kimlik bilgilerinin eksik kalması, eldeki olguların yok sayılmasını gerektirmez; bilinenler, bilinmeyenler ve işlemin neden tamamlanamadığı birbirinden ayrılarak aktarılır."
+        ]
+      },
+      {
+        "title": "Genel süre, başlangıç ve aciliyet",
+        "sourceTrace": "MASAK Genel Tebliği 13 md. 5 ve 13; erteleme süreleri ayrı düzenlemeye tabidir",
+        "paragraphs": [
+          "Genel bildirim süresini öğrenirken üç unsur birlikte tutulmalıdır: başlangıç, sürenin türü ve aciliyet istisnası. Genel kural şüphenin oluştuğu tarihten itibaren en geç on iş günüdür; gecikmesinde sakınca bulunan hâllerde derhal bildirim gerekir. 'İşlem tarihi', 'müşteriyle ilişkinin başladığı tarih' ve 'şüphenin oluştuğu tarih' her olayda aynı gün değildir. Süre sorusunda, verilen tarihlerin hangi olayı anlattığı belirlenmeden takvim hesabına geçilmemelidir.",
+          "On iş günü, bütün dosyaları bekletmek için tanınmış standart bir çalışma süresi değildir; genel üst sınırdır. Acil durumda bu üst sınır sonuna kadar beklenemez. Kuruluşun iş akışı, araştırma ve yetkili değerlendirmeyi zamanında tamamlayacak biçimde kurulmalıdır. Ek belge beklenmesi veya dosyanın kurum içinde başka bir birime gönderilmesi, kendiliğinden yeni bir on iş günlük süre doğurmaz. Elektronik bildirimde Başkanlık kayıtlarına giriş tarihinin esas alınması da gönderim ve kayıt takibinin önemini gösterir.",
+          "Çözümlü ayrım: Bir personelin dosyayı yöneticisine iletmesi, dış bildirimin yapıldığı anlamına gelmez. Sonradan elde edilen yeni bilgi de ilk bildirimin geciktirilmesini otomatik olarak haklı kılmaz; gerekiyorsa ek bildirim mekanizması işletilir. Soruda on iş günü ile yedi iş günü birlikte verilmişse yükümlülük belirlenmelidir: birincisi genel ŞİB süresiyle, ikincisi ilgili erteleme rejimiyle ilişkilidir. İki süreyi birbirinin alternatifi gibi kullanmak yanlıştır."
+        ]
+      },
+      {
+        "title": "Kuruluş içi değerlendirme",
+        "sourceTrace": "MASAK Genel Tebliği 13 md. 9-10; özgün ders açıklaması",
+        "paragraphs": [
+          "Uyum görevlisi atanan kuruluşta çalışanların fark ettiği hususlar, belirlenmiş dahili usulle uyum görevlisine aktarılır. Dahili bildirimin amacı bilginin kaybolmadan değerlendirme merkezine ulaşmasıdır; bu işlem MASAK'a yapılan dış bildirimle aynı değildir. Dahili usul yazılı olarak belirlenmeli ve çalışanlarca bilinmelidir. Yalnız sözlü bildirim, düzenlemede bir usul olarak kabul edilmez; e-posta veya uygun yazılım gibi kayıt üretilebilen araçlar kullanılabilir.",
+          "Uyum görevlisi, kendisine gelen veya kendisinin öğrendiği hususu kuruluşun diğer kayıtlarıyla birlikte değerlendirir. Bu amaçla ilgili birimlerden görev alanındaki bilgi ve belgeleri isteyebilir. Şube yalnız kendi gördüğü işlemi bilirken merkez farklı şubelerdeki veya kanallardaki hareketleri ilişkilendirebilir. Böylece bir müşterinin tek işlemi ile kuruluş genelindeki işlem örüntüsü arasındaki fark ortaya çıkar. Uyum görevlisinin değerlendirme yetkisi, yönetim kurulunun sistemin etkinliğine ilişkin sorumluluğunu veya diğer birimlerin bilgi sağlama görevini ortadan kaldırmaz.",
+          "Uyum görevlisi atanması zorunlu olmayan yükümlülerde dış bildirimi yapacak kişi, gerçek kişi veya tüzel kişi olma durumuna göre ilgili hükümden belirlenir. 'Her yükümlü önce bir uyum görevlisi atamak zorundadır' önermesi bu yüzden doğru değildir. Sınavda ilk soru kuruluşun yükümlü statüsü, ikinci soru tabi olduğu organizasyon biçimi, üçüncü soru bildirimi yerine getirecek yetkili olmalıdır."
+        ]
+      },
+      {
+        "title": "Gizlilik ve ifşa yasağı",
+        "sourceTrace": "5549 sayılı Kanun md. 4/2; Tedbirler Yönetmeliği md. 29; özgün ders açıklaması",
+        "paragraphs": [
+          "Gizlilik, yalnız bildirim formunu müşteriye göstermemekten ibaret değildir. Bir çalışan müşteriye 'hakkınızda MASAK'a bildirim yaptık' dediğinde, bildirim içeriğini açıklamasa bile bildirim olgusunu ifşa etmiş olur. İşlem hakkında olağan bilgi isteme süreciyle bildirim yapıldığını belli eden davranışlar ayrılmalıdır. Müşterinin tepkisini ölçmek amacıyla bildirimden söz etmek, gizlilikle bağdaşan bir araştırma yöntemi değildir.",
+          "Kanundaki açıklamama yükümlülüğü değerlendirilirken yükümlülük denetimiyle görevlendirilen denetim elemanları ve yargılama sırasında mahkemeler için belirtilen sınır ayrıca okunmalıdır. Kurum içi denetçi ile kanunda tanımlanan yükümlülük denetim elemanı aynı sıfat değildir. Bir kişinin yönetici veya kuruluş çalışanı olması da sınırsız erişim hakkı yaratmaz. Bilgiye erişim, görev ve uygulanabilir hukuki çerçeveyle sınırlandırılmalıdır. Bu nedenle 'kurum içinde herkese açıklanabilir' ve 'istisnasız hiçbir makama açıklanamaz' seçeneklerinin ikisi de kapsamı yanlış kurar."
+        ]
+      },
+      {
+        "title": "Gerekçeli bildirim anlatımının yapısı",
+        "sourceTrace": "MASAK Genel Tebliği 13 md. 4, 7-8 ve 11; örnek metin ve çözüm özgündür",
+        "paragraphs": [
+          "Gerekçeli anlatımın temel düzeni, gözlem ile değerlendirmeyi ayırmaktır. Önce müşteri ve bilinen faaliyet açıklanır; sonra tarih, tutar, kanal ve karşı taraflar üzerinden hareketler ortaya konur; ardından bunların müşteri profiliyle neden uyuşmadığı belirtilir. Elde edilen açıklama, yapılan kontroller ve devam eden belirsizlikler ayrıca yazılır. 'Müşteri aklama yapmaktadır' biçimindeki sonuç cümlesi, bu bilgi zincirinin yerine geçmez. Bilinmeyen unsur tahminle doldurulmaz; bilinmediği veya doğrulanamadığı açıkça belirtilir.",
+          "Özgün kısa örnek: 'Daha önce düzenli maaş tahsilatı görülen hesaba kısa sürede çok sayıda ilgisiz kişiden para gelmiş, tutarların büyük bölümü aynı gün başka hesaplara aktarılmıştır. Müşterinin verdiği açıklama mevcut faaliyet bilgisiyle ilişkilendirilememiştir.' Bu anlatım gözlenebilir hareketi ve şüphe bağlantısını birlikte içerir. Yine de gerçek bir bildirimde gerekli tarih, tutar, taraf ve belge bilgilerinin yerine geçmez; burada amaç cümle kurma mantığını göstermektir.",
+          "Çözümlü ayrım: Formda bir tipoloji kodunun seçilmesi, açıklama yazma ihtiyacını ortadan kaldırmaz. Kod, sınıflandırmayı; açıklama ise bu dosyada neden şüphe oluştuğunu gösterir. Sonradan karşı tarafın kimliği veya fonun izlediği yeni yol öğrenilirse, önceki bildirimle bağlantısı kurulan ek bildirim değerlendirilir. Yeni bilgi ilk şüpheyi destekleyebileceği gibi önceki değerlendirmenin bir unsurunu da değiştirebilir; amaç önceki kanaati savunmak değil, doğru ve kullanılabilir bilgi sağlamaktır."
+        ]
+      }
+    ]
+  },
+  "uyum-yonetimi": {
+    "sources": [
+      {
+        "title": "Yükümlülüklere Uyum Programı Hakkında Yönetmelik",
+        "url": "https://masak.hmb.gov.tr/suc-gelirlerinin-aklanmasinin-ve-terorun-finansmaninin-onlenmesine-iliskin-yukumluluklere-uyum-programi-hakkinda-yonetmelik/",
+        "status": "20 Ekim 2026: md. 5-7, 12, 21-29; program, sorumluluk, eğitim ve denetim ayrımları"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Uyum programının bileşenleri",
+        "sourceTrace": "Uyum Yönetmeliği md. 5; özgün sistematik açıklama",
+        "paragraphs": [
+          "Uyum programı, birbirinden bağımsız belgelerin toplandığı bir dosya değil, kuralların işlemlere uygulanmasını sağlayan kurumsal sistemdir. Politika ve prosedür ne yapılacağını ve nasıl yapılacağını belirler. Risk yönetimi hangi alanlara daha yoğun dikkat ayrılacağını gösterir. İzleme ve kontrol, kuralların işlem ve müşteri düzeyinde uygulanmasını takip eder. Uyum görevlisi ve birimi bu görevlerin organizasyonunda yer alır; eğitim çalışanların uygulama kapasitesini geliştirir; iç denetim ise sistemin yeterliliği ve etkinliği hakkında yönetim kuruluna güvence sağlar.",
+          "Bileşenlerin birbirine etkisi bir eksiklik üzerinden görülebilir: Kuruluş yüksek riskli müşteri kabulünü yönetim onayına bağlamış fakat çalışanları yeni usulden haberdar etmemiştir. Burada politika belgesinin bulunması tek başına etkin program kanıtı değildir; eğitim ve kontrol bağlantısı eksiktir. Denetim aynı eksikliğin tekrarlandığını tespit etmişse yalnız rapor düzenlemek de yeterli sonuç sayılmaz; düzeltici tedbirin uygulanması ve izlenmesi gerekir. Bu örnek, tek bir birimin iyi çalışmasının bütün programın etkinliğini garanti etmediğini gösterir.",
+          "Program kapsamındaki tedbirler asgari iki yılda bir gözden geçirilerek gerekli güncellemeler yapılır. Bu dönem, arada önemli mevzuat veya risk değişikliği olduğunda iki yıl beklenebileceği anlamına gelmez. Ayrıca programın gözden geçirilmesi, yıllık risk temelli iç denetim ve sürekli izleme farklı zaman düzenlerine tabidir. Sınavda bu faaliyetlerin sürelerini tek bir takvime indirgemek yerine her faaliyeti kendi amacıyla eşleştirmek gerekir."
+        ]
+      },
+      {
+        "title": "Yönetimin sorumluluğu ve gözetimi",
+        "sourceTrace": "Uyum Yönetmeliği md. 6; özgün görev karşılaştırması",
+        "paragraphs": [
+          "Yönetim kurulunun nihai sorumluluğu, günlük her işlemi bizzat incelemesi demek değildir. Kurul; uygun organizasyonu kurmak, politika ve yıllık eğitim programlarını onaylamak, görev ve yetkileri açık belirlemek, faaliyet sonuçlarını değerlendirmek ve eksikliklerin giderilmesini sağlamakla ilişkilidir. Uyum görevlisi ise kendisine verilen görevleri yeterli yetki, bilgiye erişim ve kaynakla yerine getirmelidir. Bu iki düzeyin ayrılması, operasyonel görev ile kurumsal gözetimin birbirinin yerine geçirilmesini önler.",
+          "Yetki devri ile sorumluluğun ortadan kalkması da ayrı konulardır. Yönetmelikteki koşullara uygun yazılı yetki devri, kurulun nihai sorumluluğunu kaldırmaz. Bir sınav seçeneği 'uyum görevlisi atanınca yönetim kurulunun sorumluluğu sona erer' diyorsa, organizasyon kurma aracını sorumluluktan kurtulma nedeni hâline getirmektedir. Buna karşılık bütün görevleri doğrudan kurula yükleyen ve uyum görevlisinin işlevini yok sayan seçenek de sistemin görev dağılımını yanlış anlatır.",
+          "Çözümlü ayrım: Denetim raporunda aynı kontrol eksikliği ikinci kez yer almasına rağmen yönetim herhangi bir düzeltme istememiştir. Sorun yalnız denetçinin eksikliği bulup bulmaması değildir; sonuçların değerlendirilmesi ve giderici tedbir alınması da incelenir. 'Rapor hazırlanmıştır, program tamdır' sonucuna gidilemez. Başarılı bir programda tespit, sorumlu birim, düzeltici faaliyet ve sonucun izlenmesi arasında kurulabilir bir ilişki bulunmalıdır."
+        ]
+      },
+      {
+        "title": "Risk yönetimi",
+        "sourceTrace": "Uyum Yönetmeliği md. 11-12; özgün ders ve uygulama açıklaması",
+        "paragraphs": [
+          "Risk yönetiminde müşteri, ürün veya hizmet, dağıtım kanalı ve ülke/coğrafya gibi etkenler birlikte değerlendirilir. Aynı müşteri farklı ürünleri farklı biçimde kullandığında risk görünümü değişebilir. Dolayısıyla kuruluşun bütün müşterilere tek etiket vermesi veya yalnız meslek adına göre sonuca ulaşması yeterli değildir. Değerlendirme, kuruluşun faaliyet yapısıyla ilgili ölçütlere ve bunları destekleyen bilgilere dayanmalıdır. Risk sınıfı bir suçluluk kararı değil, uygulanacak tedbirlerin yoğunluğunu belirlemeye yarayan araçtır.",
+          "Öğretici bir ayrım olarak, faaliyetin kendi özelliklerinden kaynaklanan risk ile uygulanan tedbirlerden sonra devam eden risk ayrı düşünülebilir. Örneğin müşteriyle yüz yüze ilişki kurulmayan bir hizmette kimliğe bürünme riski bulunabilir; uygun doğrulama ve izleme bu riski azaltmaya yöneliktir. Bu açıklama hukuki yükümlülükleri isteğe bağlı hâle getirmez. Bir ürünün kontrolünün güçlü olması, mevzuatın zorunlu tuttuğu kimlik veya bildirim görevlerinden genel muafiyet sağlamaz.",
+          "Risk değerlendirmesi donmuş bir müşteri kabul kararı değildir. Yeni ürün, farklı ülkeyle işlem, ortaklık yapısındaki değişiklik veya işlem davranışındaki sapma önceki değerlendirmeyi etkileyebilir. Bu nedenle risk sınıfı ile izleme sonuçları arasında geri besleme bulunmalıdır. Sınavda risk yönetiminin doğru karşılığı yalnız 'riskli müşteri listesi hazırlamak' değil; riski tanımlama, değerlendirme, azaltma, izleme ve uygun şekilde raporlama bütünüdür."
+        ]
+      },
+      {
+        "title": "İzleme ve kontrol",
+        "sourceTrace": "Uyum Yönetmeliği izleme ve kontrol hükümleri; md. 7; örnekler özgündür",
+        "paragraphs": [
+          "İzleme ve kontrolün konusu yalnız yüksek tutarlı işlemler değildir. Müşteri profiliyle uyumsuz hareketler, bağlantılı küçük işlemler, yüksek riskli ülke bağlantıları, kimlik dosyasındaki eksiklikler ve gerekli onayların bulunup bulunmadığı da sistemin kapsamına girebilir. Kontrol bazen işlemden önce engelleyici, bazen işlem sonrasında tespit edici işlev görür. Buradaki amaç, kuruluşun tabi olduğu kuralların müşteri ve işlem düzeyinde nasıl uygulandığını takip etmektir; yalnız alarm üretmek değildir.",
+          "Bir alarm, incelenmesi gereken işarettir; kendiliğinden ŞİB veya suç tespiti değildir. Alarmın nedeni, inceleme sırasında bakılan bilgiler, ulaşılan değerlendirme ve yapılacak işlem arasında izlenebilir bağ kurulmalıdır. Çok sayıda alarm üretilip bunların incelenmeden kapatılması etkinlik göstergesi sayılmaz. Tersine hiç alarm çıkmaması da sistemin mutlaka başarılı olduğunu göstermez; eşikler veya kurallar yetersiz olabilir. Uygulamada etkinlik, ilgili riskleri yakalama ve bunlara uygun karşılık verme kapasitesiyle değerlendirilmelidir.",
+          "Çözümlü ayrım: İzleme birimi aynı kişinin farklı hesaplarından yapılan bağlantılı hareketleri bulmuş, uyum görevlisi bütün kayıtları değerlendirerek bildirim yönünden karar vermiştir. İlk faaliyet izleme ve kontrol, ikinci faaliyet yetkili ŞİB değerlendirmesidir. İç denetim daha sonra bu sürecin yeterli ve kurallara uygun yürütülüp yürütülmediğini inceler. Soruda aynı dosyanın yer alması, bu üç faaliyeti aynı görev hâline getirmez."
+        ]
+      },
+      {
+        "title": "Eğitim ve iç denetim",
+        "sourceTrace": "Uyum Yönetmeliği md. 21-28; özgün görev ve takvim karşılaştırması",
+        "paragraphs": [
+          "Eğitimin amacı yalnız mevzuat başlıklarını personele duyurmak değildir; çalışanların kendi görevlerinde hangi bilgiyi toplayacağını, neyi olağandışı bulacağını ve hangi kanaldan bildireceğini öğrenmesini sağlamaktır. Bu nedenle müşteri kabulü yapan kişiyle bilgi sistemleri veya üst yönetim için gereken uygulama ayrıntısı aynı olmayabilir. Genel mevzuat bilgisinin yanında kurumun risk alanları, müşteri kabul kuralları, dahili bildirim usulleri ve görevle ilgili uygulamalar yer almalıdır. Eğitim faaliyetinin planı, katılımı ve sonuçlarının izlenmesi programın işlerliğinin parçasıdır.",
+          "İç denetim ise eğitimin veya günlük kontrolün başka adı değildir. Programın bütününün yeterliliği ve etkinliği bakımından yönetim kuruluna güvence sağlamayı amaçlar. İnceleme yıllık ve risk temelli yürütülür; kurum politikaları, risk yönetimi, izleme-kontrol, eğitim ve fiilî işlemlerin kurallara uygunluğu birlikte değerlendirilebilir. Denetim görevini yerine getiren personelin bağımsız çalışmasını sağlayacak görev ayrımı önemlidir. Kendi kurduğu ve yürüttüğü tedbiri bağımsız denetim gibi sunmak bu ayrımı zayıflatır.",
+          "Zaman çizelgesinde üç farklı iş bulunur: yıl içinde eğitim ve kontrol faaliyetleri yürütülür; risk temelli iç denetim yıllık yapılır; eğitim ve iç denetime ilişkin mevzuatta öngörülen istatistikler takip eden yılın mart ayı sonuna kadar uyum görevlisi tarafından Başkanlığa bildirilir. Yönetim kuruluna eksikliklerin raporlanması ile Başkanlığa istatistik gönderilmesi aynı rapor ve aynı amaç değildir. Sınavda raporun muhatabı, içeriği ve dönemi ayrı okunmalıdır."
+        ]
+      },
+      {
+        "title": "Tam program ve münhasıran görevlendirme",
+        "sourceTrace": "Uyum Yönetmeliği md. 4, 29 ve 33; özgün kapsam karşılaştırması",
+        "paragraphs": [
+          "Yükümlü olmak ile tam uyum programı kurmak zorunda olmak farklı kapsam sorularıdır. Önce kuruluşun Tedbirler Yönetmeliği bakımından yükümlü olup olmadığı, sonra Uyum Yönetmeliğinde hangi organizasyon grubuna girdiği belirlenir. Tam program kapsamındaki kuruluş için programın bileşenleri birlikte değerlendirilir. Münhasıran uyum görevlisi atanması öngörülen grupta ise tam program kurulmadan idari düzeyde görevlendirme yapılması söz konusudur. Bu iki rejimin kuruluş listeleri birbirine karıştırılmamalıdır.",
+          "Buradaki 'münhasıran' ifadesi özellikle yanıltıcı olabilir: düzenleme, yalnız uyum görevlisi atama yükümlülüğü bulunan grubu anlatır; atanan kişinin hiçbir başka görevi olamayacağı sonucu çıkarılmaz. İlgili maddede bu görevlilerin başka görevlerinin de bulunabileceği belirtilir. Buna karşılık tam programdaki görev, bağımsızlık ve görevle bağdaşma kuralları kendi hükümleri çerçevesinde değerlendirilmelidir. Sözcüğün gündelik anlamından bütün kuruluşlara uygulanacak yasak üretilemez.",
+          "Uyum programı veya münhasıran görevlendirme kapsamına girmemek, temel yükümlülüklerden muafiyet değildir. İlgili yükümlü grubunun kimlik tespiti, ŞİB, muhafaza ve ibraz gibi görevleri kendi kapsamlarında devam eder. Çözümlü ayrım: Soruda 'bu kuruluş tam uyum programı kurmak zorunda değildir' deniyorsa bundan 'şüpheli işlemi bildirmez' sonucu çıkmaz. Organizasyon biçimi ile maddi yükümlülük ayrı değerlendirilir."
+        ]
+      }
+    ]
+  }
+}

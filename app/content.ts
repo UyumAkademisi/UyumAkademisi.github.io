@@ -1,6 +1,28 @@
 import academicData from "./academic-content.json";
+import lessonExpansions from "./lesson-expansions.json";
 
-export const academicLessonById: Record<string, typeof academicData.aklama> = academicData;
+type AcademicLesson = typeof academicData.aklama;
+type LessonExpansion = (typeof lessonExpansions)["sib"];
+const expansions: Record<string, LessonExpansion> = lessonExpansions;
+
+// Append paragraphs without moving existing blocks: saved reading highlights use block positions.
+export const academicLessonById: Record<string, AcademicLesson> = Object.fromEntries(
+  Object.entries(academicData).map(([id, chapter]) => {
+    const expansion = expansions[id];
+    if (!expansion) return [id, chapter];
+    const lecture = chapter.lecture.map((section) => {
+      const addition = expansion.sections.find((item) => item.title === section.title);
+      if (!addition) return section;
+      const paragraphs = [...section.paragraphs, ...addition.paragraphs];
+      return { ...section, paragraphs, body: paragraphs.join("\n\n"), sourceTrace: `${section.sourceTrace}; ${addition.sourceTrace}` };
+    });
+    const sources = [...chapter.sources];
+    for (const source of expansion.sources) {
+      if (!sources.some((existing) => existing.url === source.url)) sources.push(source);
+    }
+    return [id, { ...chapter, lecture, sources, wordCount: lecture.reduce((sum, section) => sum + section.body.trim().split(/\s+/u).length, 0) }];
+  }),
+);
 
 export type ModuleId = "mod1" | "mod2";
 export type Difficulty = "Temel" | "Orta" | "Sınav";
